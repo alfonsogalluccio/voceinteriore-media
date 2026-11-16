@@ -30,13 +30,9 @@ def make(scenes, out, seed=5, tmp="/home/claude/vtmp"):
         t0 += d
     open(f"{tmp}/list.txt","w").write("".join(f"file '{p}'\n" for p in parts))
     run(f"ffmpeg -y -f concat -safe 0 -i {tmp}/list.txt -c copy {tmp}/v.mp4")
-    # pad musicale originale (accordo La maggiore che respira) — nessun diritto d'autore
-    expr = ("0.10*sin(2*PI*110*t)+0.08*sin(2*PI*220*t)+0.06*sin(2*PI*277.18*t)+0.05*sin(2*PI*329.63*t)"
-            "+0.03*sin(2*PI*440*t*(1+0.002*sin(2*PI*0.3*t)))")
-    run(f"ffmpeg -y -f lavfi -i \"aevalsrc='({expr})*(0.75+0.25*sin(2*PI*0.12*t))':s=44100:d={total}\" "
-        f"-af \"lowpass=f=1800,aecho=0.8:0.7:120|240:0.35|0.25,afade=in:d=2,afade=out:st={total-2.5}:d=2.5,volume=1.6\" "
-        f"-c:a aac -b:a 160k {tmp}/a.m4a")
-    run(f"ffmpeg -y -i {tmp}/v.mp4 -i {tmp}/a.m4a -map 0:v -map 1:a -c:v copy -c:a copy -shortest -movflags +faststart {out}.tmp.mp4")
+    # pianoforte originale sintetizzato (nessun diritto d'autore)
+    import piano; piano.render(total, f"{tmp}/a.wav", seed=seed)
+    run(f"ffmpeg -y -i {tmp}/v.mp4 -i {tmp}/a.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -af loudnorm=I=-16:TP=-1.5:LRA=11 -shortest -movflags +faststart {out}.tmp.mp4")
     os.rename(f"{out}.tmp.mp4", out)
 if __name__ == "__main__":
     make(json.load(open(sys.argv[1])), sys.argv[2])
