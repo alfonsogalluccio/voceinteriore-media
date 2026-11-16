@@ -35,7 +35,7 @@ Usare `post` OPPURE `carousel`. Andare a capo con `\n` per evitare parole isolat
 ## Scelta della musica
 `tools/music_library.json` contiene per ogni brano: umore (emozionale / luminoso / epico), bpm, miglior estratto.
 Scegliere il brano adatto al tema; non usare lo stesso brano due giorni di fila (controllare CONTENT_LOG.md).
-Ammessi solo brani con licenza verificata: quelli Pixabay della libreria. Esclusi sempre: brani di artisti famosi (es. Einaudi), canzoni commerciali, file di origine sconosciuta.
+Ammessi solo i brani della libreria: Pixabay (licenza verificata) e i brani `proprio-*` creati dal proprietario (uso libero). Preferire spesso i brani propri: sono unici e riconoscibili. Esclusi sempre: brani di artisti famosi (es. Einaudi), canzoni commerciali, file di origine sconosciuta.
 
 ## Controllo qualità (obbligatorio, guardare davvero le immagini)
 1. Aprire `preview.jpg` e i `_frame_*.jpg` con lo strumento Read: testo leggibile, nessuna parola isolata o tagliata, niente sovrapposizioni, primo fotogramma del video con testo visibile.
