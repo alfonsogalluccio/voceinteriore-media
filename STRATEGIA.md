@@ -58,3 +58,6 @@ Ricorrenze da sfruttare: feste liturgiche (Avvento, Natale, Quaresima, Pasqua, s
 
 ## Misurare e migliorare
 Ogni lunedì il report confronta formati, temi, orari e piattaforme. Si raddoppia ciò che funziona, si abbandona ciò che non funziona per 2 settimane di fila.
+
+## Storico del canale (da Buffer)
+Prima di questo sistema la pagina pubblicava ogni giorno alle 04:30 circa una "Preghiera del giorno" in video (~60 s) su YouTube e Instagram, con didascalia lunga a elenco puntato e "Scrivi Amen". È un format riconoscibile per chi già segue: mantenerlo come appuntamento fisso almeno 2-3 volte a settimana (versione più corta e dinamica), e usare il report per confrontarlo con i nuovi format.
