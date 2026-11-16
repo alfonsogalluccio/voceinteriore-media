@@ -1,0 +1,8 @@
+{"dur": 12.5, "palette": "alba", "seed": 3,
+ "music": "echoes_of_lumen-emotional-cinematic-orchestra-piano-583429.mp3",
+ "cuts": [3.3, 8.6],
+ "scenes": [
+  {"style": "hook", "text": "Se oggi ti senti\nsenza forze…", "instant": true, "cy": 860},
+  {"style": "verse", "kicker": "Dio ti dice", "text": "«Non temere,\nperché io sono con te.»", "sub": "Isaia 41,10", "cy": 900},
+  {"style": "hook", "text": "Non stai\ncamminando da solo.", "small": "Scrivi «Amen» se lo credi", "cy": 860}
+ ]}

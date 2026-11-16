@@ -14,11 +14,18 @@ CREAM = (250, 243, 230)
 
 def font(p, s): return ImageFont.truetype(p, s)
 
-def background(w, h, seed=1, glow_y=0.78):
+PALETTES = {
+    "alba":  dict(top=(12,20,44),  mid=(58,40,78),  low=(196,122,70), glow=(255,205,140), stars=0),
+    "notte": dict(top=(4,8,22),    mid=(16,30,70),  low=(40,80,120),  glow=(190,215,255), stars=1),
+    "oro":   dict(top=(22,12,10),  mid=(78,30,34),  low=(206,150,70), glow=(255,215,150), stars=0),
+    "mare":  dict(top=(4,22,34),   mid=(10,60,84),  low=(60,150,160), glow=(200,240,235), stars=0),
+    "viola": dict(top=(18,8,36),   mid=(70,30,96),  low=(214,120,140),glow=(255,200,200), stars=1),
+}
+def background(w, h, seed=1, glow_y=0.78, palette="alba"):
     """Alba: blu notte in alto, glow dorato in basso, raggi tenui e grana."""
     rng = np.random.default_rng(seed)
     y = np.linspace(0, 1, h)[:, None]; x = np.linspace(0, 1, w)[None, :]
-    top = np.array([12, 20, 44]); mid = np.array([58, 40, 78]); low = np.array([196, 122, 70])
+    P = PALETTES[palette]; top = np.array(P["top"]); mid = np.array(P["mid"]); low = np.array(P["low"])
     t = y
     col = np.where(t[..., None] < 0.55,
                    top + (mid - top) * (t[..., None] / 0.55),
@@ -27,7 +34,7 @@ def background(w, h, seed=1, glow_y=0.78):
     # glow centrale
     d = np.sqrt(((x - 0.5) * w / h) ** 2 + (y - glow_y) ** 2)
     glow = np.exp(-(d / 0.32) ** 2)[..., None]
-    col += glow * np.array([255, 205, 140]) * 0.55
+    col += glow * np.array(P["glow"]) * 0.55
     # raggi di luce
     ang = np.arctan2(y - glow_y, (x - 0.5) * w / h)
     rays = (0.5 + 0.5 * np.sin(ang * 14 + seed)) ** 6 * np.exp(-d / 0.9)
@@ -35,6 +42,11 @@ def background(w, h, seed=1, glow_y=0.78):
     # vignettatura
     v = 1 - 0.45 * (((x - 0.5) * 1.6) ** 2 + ((y - 0.5) * 1.2) ** 2)
     col *= np.clip(v, 0.45, 1)[..., None]
+    if P["stars"]:
+        n = int(w * h / 9000); sy = rng.random(n) ** 1.8 * 0.6; sx = rng.random(n)
+        for a, b, br in zip(sy, sx, rng.random(n)):
+            yy, xx = int(a * h), int(b * w); r = 1 + int(br * 2)
+            col[max(0,yy-r):yy+r, max(0,xx-r):xx+r] += 120 * br
     col += rng.normal(0, 4.0, (h, w, 1))
     return Image.fromarray(np.clip(col, 0, 255).astype(np.uint8))
 
@@ -93,8 +105,8 @@ def brand_footer(img, y=None):
     ornament(img, w // 2, y - 22, half=40, fill=ink)
     spaced(img, "VOCEINTERIORE2025", SANS_B, 26, w // 2, y, fill=ink, track=7)
 
-def verse_card(w, h, kicker, verse, ref, seed=1, glow_y=0.95):
-    img = background(w, h, seed, glow_y).convert("RGBA"); frame(img)
+def verse_card(w, h, kicker, verse, ref, seed=1, glow_y=0.95, palette="alba"):
+    img = background(w, h, seed, glow_y, palette).convert("RGBA"); frame(img)
     top = int(h * 0.17)
     spaced(img, kicker.upper(), SANS, 28, w // 2, top, fill=GOLD, track=8)
     ornament(img, w // 2, top + 62)
