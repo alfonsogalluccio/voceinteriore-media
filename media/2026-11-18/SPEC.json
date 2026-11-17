@@ -1,0 +1,12 @@
+{"date":"2026-11-18","palette":"oro","seed":18,
+ "carousel":[
+  {"kicker":"Dal Vangelo di oggi","text":"3 piccole cose\nche in famiglia\nvalgono oro","numbered":false,"note":"Scorri e salvalo"},
+  {"kicker":"Ricorda","text":"Un «buongiorno»\ndetto con il cuore\ncambia la giornata\na chi ami."},
+  {"kicker":"Ricorda","text":"Un abbraccio\ndopo una lite\nvale più\ndi mille ragioni."},
+  {"kicker":"Ricorda","text":"Una preghiera\nper chi ami,\nanche in silenzio,\nnon va mai perduta."},
+  {"kicker":"Gesù dice","text":"«Bene, servo buono!\nPoiché ti sei mostrato\nfedele nel poco…»","sub":"Luca 19,17","numbered":false}
+ ],
+ "stories":[
+  {"kicker":"Buongiorno","text":"Oggi Dio non ti chiede\ngrandi imprese.\nTi chiede di amare\nbene nel poco.","note":"Invialo a chi ami","palette":"mare"},
+  {"kicker":"Benedizione della sera","text":"Signore, benedici\nla mia famiglia:\nchi è vicino,\nchi è lontano,\nchi ora mi manca.","note":"Scrivi Amen","palette":"notte"}
+ ]}
