@@ -82,6 +82,15 @@ Ammessi solo i brani della libreria: Pixabay (licenza verificata) e i brani `pro
 - Fare le chiamate a Buffer una alla volta, non in parallelo.
 - Orari sperimentali di partenza (Roma): Storia 1 08:00 · Reel IG 13:00 · Short YT 18:00 · Post IG 19:30 · TikTok 20:30 · Storia 2 21:00. Aggiornare in base ai report.
 
+## Ricerca e analisi dei profili (prima di decidere)
+- Studiare contenuti di successo di altri profili cristiani, di fede, su Gesù, motivazione e crescita personale (Reel, post, video, Storie): hook dei primi secondi, copertine, titoli, descrizioni, hashtag, durata, argomenti con più interazioni.
+- Strumenti: ricerca web (articoli, pagine pubbliche dei profili, risultati di ricerca che mostrano i contenuti più visti, blog di settore). Instagram e TikTok spesso non sono leggibili direttamente: dirlo e usare le fonti disponibili, senza inventare numeri o contenuti.
+- Ispirarsi senza copiare: ogni idea deve diventare originale e coerente con l'identità VoceInteriore2025.
+- Salvare le osservazioni in TENDENZE.md (con fonte) e confrontarle con i nostri risultati (Buffer).
+
+## Programma del giorno (obbligatorio)
+Dopo aver programmato i contenuti, scrivere `programmi/AAAA-MM-GG.md` (data del giorno di pubblicazione) seguendo `programmi/MODELLO.md`: strategia ragionata, e per ogni pubblicazione piattaforma, orario, tipo, argomento e idea, titolo, descrizione completa esattamente come pubblicata, hashtag e stato su Buffer. Push nel repo. Ogni mattina un'attività lo verifica e lo invia al proprietario.
+
 ## Ricerca
 Ogni giorno annotare in TENDENZE.md almeno 1 osservazione utile trovata sul web (con fonte), indicando se è dato verificato o ipotesi e se passa il filtro "per noi".
 
