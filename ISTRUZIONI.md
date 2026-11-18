@@ -43,7 +43,7 @@ Se nella cartella musica ci sono brani nuovi non presenti in `tools/music_librar
 - Reel/Short/TikTok: `"bg": {"clip": "clips/<nome>.mp4"}` → il video scorre come sfondo (preferire clip lunghe almeno quanto il video; quelle corte vanno in loop). `darken` regola la velatura (default 0.38).
 - Storie e post: `"bg": {"clip": "clips/<nome>.mp4", "frame_t": 3.0}` usa un fotogramma come foto (senza frame_t usa il poster).
 - Alternare video reali e concept generati: almeno 1 contenuto al giorno con video/foto reale, quando disponibili. Mai la stessa clip prima di 3 settimane.
-- Nuovi video dal proprietario: tenere solo materiale suo o con licenza libera (Pexels, Pixabay, Mixkit); scartare contenuti presi da altri profili/siti (es. Pinterest, Klickpin), video con persone riconoscibili famose, marchi o scritte.
+- Nuovi video dal proprietario: materiale suo, con licenza libera (Pexels, Pixabay, Mixkit) o per cui il proprietario dichiara l'autorizzazione (annotarlo in "fonte"). Scartare sempre video con persone famose o scene di film/serie, marchi, scritte o filigrane.
 
 ## Procedura sfondi (obbligatoria)
 1. `python3 tools/bg_log.py` → leggere gli ultimi 30 sfondi e scegliere concept, variante e layout nuovi (vedi STRATEGIA.md, sezione 1).
