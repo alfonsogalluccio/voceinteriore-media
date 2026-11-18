@@ -7,14 +7,16 @@ Leggere anche STRATEGIA.md. Rispondere sempre all'utente in italiano, in modo se
 - Canali: Instagram `6afb11adece6dfde5fe4ec9a` · TikTok `6afb1233ece6dfde5fe4f23c` · YouTube `6afb125aece6dfde5fe4f3f8`
 - Facebook: NON collegato (il piano Free consente 3 canali).
 - Repo pubblico media: `alfonsogalluccio/voceinteriore-media` → link file: `https://raw.githubusercontent.com/alfonsogalluccio/voceinteriore-media/main/media/AAAA-MM-GG/<file>`
-- Repo privato musica: `alfonsogalluccio/voceinteriore-privato` (cartella `music/`). La musica NON va mai nel repo pubblico (la licenza Pixabay vieta di distribuire i brani da soli).
+- Musica principale: cartella `music/` di QUESTO repo, con i soli brani `proprio-*` creati dal proprietario (uso libero, messi qui il 18/11 perché le attività programmate non raggiungono il repo privato).
+- Repo privato musica: `alfonsogalluccio/voceinteriore-privato` (cartella `music/`) con i brani Pixabay: usarlo solo se raggiungibile. I brani Pixabay NON vanno mai nel repo pubblico (la licenza vieta di distribuirli da soli).
 
 ## Preparazione ambiente
 ```
 pip install --break-system-packages -q librosa
 git clone --depth 1 https://github.com/alfonsogalluccio/voceinteriore-media
-git clone --depth 1 https://github.com/alfonsogalluccio/voceinteriore-privato
+git clone --depth 1 https://github.com/alfonsogalluccio/voceinteriore-privato   # facoltativo: se fallisce, usare music/ di questo repo
 ```
+MUSIC_DIR = `music/` di voceinteriore-media (brani propri). Se il repo privato è raggiungibile, si possono usare anche i brani Pixabay da lì.
 Strumenti: `tools/make_day.py SPEC.json OUT_DIR MUSIC_DIR` crea tutto (immagini, storie, video, anteprima).
 Se nella cartella musica ci sono brani nuovi non presenti in `tools/music_library.json`, rigenerarla con
 `python3 tools/music_lib.py MUSIC_DIR tools/music_library.json`.
