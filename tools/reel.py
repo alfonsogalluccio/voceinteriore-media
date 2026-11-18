@@ -4,6 +4,7 @@ musica vera dalla libreria (estratto migliore, agganciato ai beat)."""
 import sys, os, json, subprocess, numpy as np
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from brand import *
+import scenes as SCN
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 W, H, FPS = 1080, 1920, 30
 
@@ -73,8 +74,14 @@ def render(spec, out, music_dir, lib, tmp="/home/claude/rtmp"):
         cuts.append(min(beats, key=lambda b: abs(b - c)) if beats else c)
     cuts.append(total)
     scenes = [Scene(s, cuts[i], cuts[i+1]) for i, s in enumerate(spec["scenes"])]
-    bg = background(1296, 2304, spec.get("seed", 1), 0.95, spec.get("palette", "alba"))
-    foot = Image.new("RGBA", (W, H), (0, 0, 0, 0)); brand_footer(foot, H - 230)
+    bgspec = spec.get("bg", {"concept": "cielo", "palette": spec.get("palette", "alba")})
+    bg, meta = SCN.render(bgspec, 1296, 2304, spec.get("seed", 1))
+    if meta.get("tono") == "light" or bgspec.get("concept") != "cielo":
+        # velatura per leggere il testo chiaro su qualsiasi sfondo
+        import numpy as _np
+        a = _np.array(bg, _np.float32) * (0.55 if meta.get("tono") == "light" else 0.78); bg = Image.fromarray(a.clip(0, 255).astype(_np.uint8))
+    meta.update(layout="video")
+    foot = Image.new("RGBA", (W, H), (0, 0, 0, 0)); ornament(foot, W // 2, H - 252, half=40, fill=CREAM); spaced(foot, "VOCEINTERIORE2025", SANS_B, 26, W // 2, H - 230, fill=CREAM, track=7)
     P = particles(rng); N = int(total * FPS)
     beat_frames = set(int(b * FPS) for b in beats)
     ff = subprocess.Popen(f"ffmpeg -v error -y -f rawvideo -pix_fmt rgb24 -s {W}x{H} -r {FPS} -i - "
@@ -106,8 +113,8 @@ def render(spec, out, music_dir, lib, tmp="/home/claude/rtmp"):
                    f'-af "afade=in:d=0.15,afade=out:st={total-1.2}:d=1.2,loudnorm=I=-14:TP=-1.5:LRA=11" -c:a aac -b:a 192k '
                    f'-shortest -movflags +faststart "{out}.tmp.mp4"', shell=True, check=True)
     os.rename(out + ".tmp.mp4", out)
-    return cuts
+    return cuts, meta
 
 if __name__ == "__main__":
     spec = json.load(open(sys.argv[1])); lib = json.load(open(os.path.join(sys.argv[3], "library.json")))
-    print(render(spec, sys.argv[2], sys.argv[3], lib))
+    print(render(spec, sys.argv[2], sys.argv[3], lib)[0])

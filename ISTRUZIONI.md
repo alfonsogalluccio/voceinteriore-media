@@ -23,16 +23,25 @@ Se nella cartella musica ci sono brani nuovi non presenti in `tools/music_librar
 
 ## Formato SPEC.json
 ```json
-{"date":"2026-11-18","palette":"notte","seed":11,
- "post":{"kicker":"Parola per oggi","text":"...","sub":"Isaia 41,10"},
- "carousel":[{"kicker":"...","text":"...","numbered":false}, {"text":"...","sub":"Salmo 23,1"}],
- "stories":[{"kicker":"Buongiorno","text":"...","note":"Invialo a chi ami"},{"kicker":"Domanda della sera","text":"...","palette":"viola"}],
- "reel":{"dur":12,"music":"<file della libreria>","cuts":[3.3,8.2],
+{"date":"2026-11-19","seed":19,
+ "carousel_style":{"bg":{"concept":"carta","variant":1},"layout":"sinistra","font":"serif"},
+ "carousel":[{"kicker":"...","text":"...","numbered":false,"note":"Scorri"}, {"text":"...","sub":"Salmo 23,1"}],
+ "stories":[{"kicker":"Buongiorno","text":"...","note":"Invialo a chi ami","bg":{"concept":"finestra","variant":0},"layout":"alto"},
+            {"kicker":"Domanda della sera","text":"...","bg":{"concept":"stelle","variant":2},"layout":"basso","font":"sans"}],
+ "reel":{"dur":12,"music":"<file della libreria>","cuts":[3.3,8.2],"bg":{"concept":"mare","variant":0},
    "scenes":[{"style":"hook","text":"...","instant":true},
              {"style":"verse","kicker":"Dio ti dice","text":"«...»","sub":"Riferimento"},
              {"style":"hook","text":"...","small":"invito all'azione"}]}}
 ```
-Usare `post` OPPURE `carousel`. Andare a capo con `\n` per evitare parole isolate su una riga. Palette: alba, notte, oro, mare, viola. Cambiare `seed` ogni giorno.
+- `post` (oggetto singolo, stessi campi di una slide) OPPURE `carousel`.
+- **Sfondi** (`bg`): concept disponibili in `tools/scenes.py` → candela, finestra, montagne, mare, bosco, stelle, citta, pioggia, acquerello, carta, colore (5 varianti), lago, grano, croce, sentiero, cielo (vecchio stile, con `palette`). Ogni concept ha 3 varianti (`variant` 0-2) con colori e composizioni diverse. Foto vere: `{"photo":"backgrounds/<file>.jpg","meta":{...}}`.
+- **Layout**: centro, alto, basso, sinistra, grande. **Font**: serif_i, serif, sans. `frame`: true/false.
+- Andare a capo con `\n` per evitare parole isolate. Cambiare `seed` ogni giorno.
+
+## Procedura sfondi (obbligatoria)
+1. `python3 tools/bg_log.py` → leggere gli ultimi 30 sfondi e scegliere concept, variante e layout nuovi (vedi STRATEGIA.md, sezione 1).
+2. `make_day.py` si ferma con "RIPETIZIONE VISIVA" se si ripete: cambiare e rigenerare (forzare solo con `allow_repeat` + `repeat_reason`).
+3. Dopo il controllo qualità: `python3 tools/bg_log.py --registra OUT_DIR/bg_entries.json`, poi commit di `tools/bg_log.json`.
 
 ## Scelta della musica
 `tools/music_library.json` contiene per ogni brano: umore (emozionale / luminoso / epico), bpm, miglior estratto.
@@ -57,8 +66,11 @@ Ammessi solo i brani della libreria: Pixabay (licenza verificata) e i brani `pro
 - Fare le chiamate a Buffer una alla volta, non in parallelo.
 - Orari sperimentali di partenza (Roma): Storia 1 08:00 · Reel IG 13:00 · Short YT 18:00 · Post IG 19:30 · TikTok 20:30 · Storia 2 21:00. Aggiornare in base ai report.
 
+## Ricerca
+Ogni giorno annotare in TENDENZE.md almeno 1 osservazione utile trovata sul web (con fonte), indicando se è dato verificato o ipotesi e se passa il filtro "per noi".
+
 ## Registro
-Aggiungere una riga a CONTENT_LOG.md per ogni giornata (data, tema, format, versetti, brano, palette) e fare push.
+Aggiungere una riga a CONTENT_LOG.md per ogni giornata (data, tema, format, versetti, brano, concept grafici e layout, eventuale esperimento) e fare push.
 
 ## Controllo pubblicazioni
 Con `list_posts` (status sent / error) verificare le ultime 24 ore. Per ogni errore: leggere il messaggio, correggere (link, formato, testo) e riprogrammare. Se non risolvibile, segnalarlo all'utente con il motivo esatto.
