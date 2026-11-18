@@ -60,7 +60,7 @@ Ricorrenze da sfruttare: feste liturgiche (Avvento, Natale, Quaresima, Pasqua, s
 Ogni lunedì il report confronta formati, temi, orari e piattaforme. Si raddoppia ciò che funziona, si abbandona ciò che non funziona per 2 settimane di fila.
 
 ## Storico del canale (da Buffer)
-Prima di questo sistema la pagina pubblicava ogni giorno alle 04:30 circa una "Preghiera del giorno" in video (~60 s) su YouTube e Instagram, con didascalia lunga a elenco puntato e "Scrivi Amen". È un format riconoscibile per chi già segue: mantenerlo come appuntamento fisso almeno 2-3 volte a settimana (versione più corta e dinamica), e usare il report per confrontarlo con i nuovi format.
+Ogni mattina verso le 04:30 il proprietario pubblica personalmente la "Preghiera del giorno" (video professionali su YouTube, TikTok e Instagram). **Le preghiere del mattino sono escluse dal lavoro automatico**: non vanno create, sostituite né imitate. I nostri contenuti le affiancano con altri format.
 
 ---
 
@@ -107,3 +107,11 @@ Contenuti che emozionano, fanno riflettere, trasmettono speranza e fanno sentire
 
 ## 7. Autonomia
 Proporre e sperimentare in autonomia nuovi formati, argomenti e soluzioni grafiche (almeno 1 esperimento a settimana, annotato in CONTENT_LOG.md come "Esperimento"), sempre nel rispetto di ISTRUZIONI.md e delle autorizzazioni.
+
+## 8. Contenuti quotidiani (dal 18/11/2026)
+Focus: **motivazioni cristiane** (forza, coraggio, speranza, fiducia in Dio nella vita quotidiana); **riflessioni** (amore, famiglia, perdono, fede, gratitudine, difficoltà); **versetti spiegati** con parole semplici e umane (testo CEI verificato + 1-2 frasi di spiegazione); **messaggi di fede** per chi attraversa momenti difficili; **video brevi** con apertura forte e un messaggio che resta nel cuore.
+Esclusa la preghiera del mattino (vedi Storico). Evitare ripetizioni; preferire argomenti attuali, positivi e capaci di raggiungere un pubblico ampio.
+
+## 9. Voce narrante (ElevenLabs)
+Usarla quando migliora davvero il contenuto (tipicamente il Reel/Short/TikTok del giorno: una motivazione o un versetto spiegato), non per forza ogni giorno.
+Voce principale: **Daniela Narrator IT** (calda, elegante, adatta alla narrazione spirituale); alternativa maschile: **Elian – Warm Italian Narrator**. Tono sereno, vicino, autentico. Limiti e procedura in ISTRUZIONI.md.

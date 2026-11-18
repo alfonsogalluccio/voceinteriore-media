@@ -121,9 +121,17 @@ def render(spec, out, music_dir, lib, tmp="/home/claude/rtmp"):
     ff.stdin.close(); ff.wait()
     if clip: clip.kill()
     mp = os.path.join(music_dir, spec["music"])
-    subprocess.run(f'ffmpeg -v error -y -i {tmp}/v.mp4 -ss {start} -t {total} -i "{mp}" -map 0:v -map 1:a -c:v copy '
-                   f'-af "afade=in:d=0.15,afade=out:st={total-1.2}:d=1.2,loudnorm=I=-14:TP=-1.5:LRA=11" -c:a aac -b:a 192k '
-                   f'-shortest -movflags +faststart "{out}.tmp.mp4"', shell=True, check=True)
+    if spec.get("voice"):
+        # voce narrante (ElevenLabs) sopra la musica abbassata
+        vd = int(spec.get("voice_delay", 0.6) * 1000); mv = spec.get("music_vol_with_voice", 0.22)
+        subprocess.run(f'ffmpeg -v error -y -i {tmp}/v.mp4 -ss {start} -t {total} -i "{mp}" -i "{spec["voice"]}" '
+                       f'-filter_complex "[1:a]volume={mv},afade=in:d=0.15,afade=out:st={total-1.2}:d=1.2[m];'
+                       f'[2:a]adelay={vd}|{vd},apad[v];[m][v]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[a]" '
+                       f'-map 0:v -map "[a]" -c:v copy -c:a aac -b:a 192k -t {total} -movflags +faststart "{out}.tmp.mp4"', shell=True, check=True)
+    else:
+        subprocess.run(f'ffmpeg -v error -y -i {tmp}/v.mp4 -ss {start} -t {total} -i "{mp}" -map 0:v -map 1:a -c:v copy '
+                       f'-af "afade=in:d=0.15,afade=out:st={total-1.2}:d=1.2,loudnorm=I=-14:TP=-1.5:LRA=11" -c:a aac -b:a 192k '
+                       f'-shortest -movflags +faststart "{out}.tmp.mp4"', shell=True, check=True)
     os.rename(out + ".tmp.mp4", out)
     return cuts, meta
 

@@ -45,6 +45,15 @@ Se nella cartella musica ci sono brani nuovi non presenti in `tools/music_librar
 - Alternare video reali e concept generati: almeno 1 contenuto al giorno con video/foto reale, quando disponibili. Mai la stessa clip prima di 3 settimane.
 - Nuovi video dal proprietario: materiale suo, con licenza libera (Pexels, Pixabay, Mixkit) o per cui il proprietario dichiara l'autorizzazione (annotarlo in "fonte"). Scartare sempre video con persone famose o scene di film/serie, marchi, scritte o filigrane.
 
+## Voce narrante ElevenLabs (connettore ElevenCreative)
+- **Limite: 600 caratteri di testo al giorno** (ora di Roma), da 0 a 600, mai di più. Registro: `tools/elevenlabs_log.json`. Prima di generare: `python3 tools/voce.py check "TESTO"`; se supera, accorciare o rinunciare. Mai usare crediti oltre il limite senza permesso del proprietario.
+- Generazione: `creative_generate_speech` con `model_id: "eleven_v4"`, `generations_count: 1`, voce `VZOd9FMXDnXRZpGn0thg` (Daniela) o `jMEwEYrOKjM6NDQNodla` (Elian). **Mai ripetere una chiamata per riprovare** (consuma di nuovo).
+- Attendere con `creative_get_flow_run_status` fino a completed; solo allora registrare: `python3 tools/voce.py add "TESTO" "uso" FLOW_ID`.
+- Scaricare l'mp3 dal `content_url` e passarlo al video con `"voice": "<percorso mp3>"` nel reel (opzioni `voice_delay`, `music_vol_with_voice`). Il testo a schermo deve seguire ciò che la voce dice.
+- Se il download è bloccato (dominio elevenlabsusercontent.com non consentito), non generare altro: pubblicare il video senza voce e segnalarlo all'utente.
+- Nel messaggio finale indicare sempre: caratteri usati oggi e residuo (o "non verificabile", senza inventare).
+- Testo per la voce: italiano naturale, frasi brevi, niente emoji né hashtag; versetti CEI esatti.
+
 ## Procedura sfondi (obbligatoria)
 1. `python3 tools/bg_log.py` → leggere gli ultimi 30 sfondi e scegliere concept, variante e layout nuovi (vedi STRATEGIA.md, sezione 1).
 2. `make_day.py` si ferma con "RIPETIZIONE VISIVA" se si ripete: cambiare e rigenerare (forzare solo con `allow_repeat` + `repeat_reason`).
