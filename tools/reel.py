@@ -81,6 +81,12 @@ def render(spec, out, music_dir, lib, tmp="/home/claude/rtmp"):
         import numpy as _np
         a = _np.array(bg, _np.float32) * (0.55 if meta.get("tono") == "light" else 0.78); bg = Image.fromarray(a.clip(0, 255).astype(_np.uint8))
     meta.update(layout="video")
+    clip = None
+    if "clip" in bgspec:
+        cp = os.path.join(SCN.ROOT, bgspec["clip"])
+        clip = subprocess.Popen(f'ffmpeg -v error -stream_loop -1 -i "{cp}" -vf "scale={W}:{H},fps={FPS}" -f rawvideo -pix_fmt rgb24 -',
+                                shell=True, stdout=subprocess.PIPE, stdin=subprocess.DEVNULL)
+        dk = bgspec.get("darken", 0.38)
     foot = Image.new("RGBA", (W, H), (0, 0, 0, 0)); ornament(foot, W // 2, H - 252, half=40, fill=CREAM); spaced(foot, "VOCEINTERIORE2025", SANS_B, 26, W // 2, H - 230, fill=CREAM, track=7)
     P = particles(rng); N = int(total * FPS)
     beat_frames = set(int(b * FPS) for b in beats)
@@ -94,7 +100,12 @@ def render(spec, out, music_dir, lib, tmp="/home/claude/rtmp"):
         z = 1 + 0.09 * t / total
         cw, ch = 1296 / z * (W / 1296) * 1.2, 2304 / z * (H / 2304) * 1.2
         cx, cy = 648 + 18 * np.sin(t * 0.4), 1152 - 30 * t / total
-        frame = bg.crop((int(cx - cw/2), int(cy - ch/2), int(cx + cw/2), int(cy + ch/2))).resize((W, H), Image.BILINEAR).convert("RGBA")
+        if clip:
+            raw = clip.stdout.read(W * H * 3)
+            fr = np.frombuffer(raw, np.uint8).reshape(H, W, 3).astype(np.float32) * (1 - dk)
+            frame = Image.fromarray(fr.astype(np.uint8)).convert("RGBA")
+        else:
+            frame = bg.crop((int(cx - cw/2), int(cy - ch/2), int(cx + cw/2), int(cy + ch/2))).resize((W, H), Image.BILINEAR).convert("RGBA")
         # particelle di luce che salgono
         lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
         ys = (P["y"] + P["vy"] * t) % H; xs = (P["x"] + P["vx"] * t) % W
@@ -108,6 +119,7 @@ def render(spec, out, music_dir, lib, tmp="/home/claude/rtmp"):
         if fi >= N - 12: frame = Image.blend(frame, Image.new("RGBA", (W, H), (0, 0, 0, 255)), (fi - (N - 12)) / 12 * 0.9)
         ff.stdin.write(frame.convert("RGB").tobytes())
     ff.stdin.close(); ff.wait()
+    if clip: clip.kill()
     mp = os.path.join(music_dir, spec["music"])
     subprocess.run(f'ffmpeg -v error -y -i {tmp}/v.mp4 -ss {start} -t {total} -i "{mp}" -map 0:v -map 1:a -c:v copy '
                    f'-af "afade=in:d=0.15,afade=out:st={total-1.2}:d=1.2,loudnorm=I=-14:TP=-1.5:LRA=11" -c:a aac -b:a 192k '

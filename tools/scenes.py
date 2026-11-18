@@ -302,6 +302,19 @@ def photo(path, w, h, darken=0.45):
 def render(spec, w, h, seed=1):
     """spec: {"concept": nome, "variant": n} oppure {"photo": "backgrounds/x.jpg", "meta": {...}}"""
     rng = np.random.default_rng(seed)
+    if "clip" in spec:
+        import json as _j
+        cat = {c["file"]: c for c in _j.load(open(os.path.join(ROOT, "clips", "catalogo.json")))}
+        c = cat[spec["clip"]]; m = {k: c[k] for k in ("soggetto", "ambientazione", "palette", "luce", "tono")}
+        m.update(concept="clip:" + os.path.basename(c["file"])[:-4], prospettiva="video reale", composizione="video reale")
+        if spec.get("frame_t") is not None:
+            import subprocess, tempfile
+            tmp = tempfile.mktemp(suffix=".jpg")
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(spec["frame_t"]), "-i", os.path.join(ROOT, c["file"]), "-frames:v", "1", "-q:v", "2", tmp], stdin=subprocess.DEVNULL)
+            src = tmp
+        else: src = os.path.join(ROOT, c["poster"])
+        m["tono"] = "dark"  # sulle foto reali il testo è sempre chiaro con velatura
+        return photo(src, w, h, spec.get("darken", 0.35)), m
     if "photo" in spec:
         m = dict(spec.get("meta", {})); m.setdefault("tono", "dark"); m["concept"] = "foto:" + os.path.basename(spec["photo"])
         return photo(spec["photo"], w, h, spec.get("darken", 0.45)), m

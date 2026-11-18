@@ -38,6 +38,13 @@ Se nella cartella musica ci sono brani nuovi non presenti in `tools/music_librar
 - **Layout**: centro, alto, basso, sinistra, grande. **Font**: serif_i, serif, sans. `frame`: true/false.
 - Andare a capo con `\n` per evitare parole isolate. Cambiare `seed` ogni giorno.
 
+## Video reali (cartella clips/)
+- `clips/catalogo.json` elenca i video veri (Pexels, uso libero) già tagliati in verticale 1080x1920, senza audio, con soggetto, luce, palette e durata.
+- Reel/Short/TikTok: `"bg": {"clip": "clips/<nome>.mp4"}` → il video scorre come sfondo (preferire clip lunghe almeno quanto il video; quelle corte vanno in loop). `darken` regola la velatura (default 0.38).
+- Storie e post: `"bg": {"clip": "clips/<nome>.mp4", "frame_t": 3.0}` usa un fotogramma come foto (senza frame_t usa il poster).
+- Alternare video reali e concept generati: almeno 1 contenuto al giorno con video/foto reale, quando disponibili. Mai la stessa clip prima di 3 settimane.
+- Nuovi video dal proprietario: tenere solo materiale suo o con licenza libera (Pexels, Pixabay, Mixkit); scartare contenuti presi da altri profili/siti (es. Pinterest, Klickpin), video con persone riconoscibili famose, marchi o scritte.
+
 ## Procedura sfondi (obbligatoria)
 1. `python3 tools/bg_log.py` → leggere gli ultimi 30 sfondi e scegliere concept, variante e layout nuovi (vedi STRATEGIA.md, sezione 1).
 2. `make_day.py` si ferma con "RIPETIZIONE VISIVA" se si ripete: cambiare e rigenerare (forzare solo con `allow_repeat` + `repeat_reason`).
