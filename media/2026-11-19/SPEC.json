@@ -1,0 +1,104 @@
+{
+ "date": "2026-11-19",
+ "seed": 119,
+ "carousel_style": {
+  "bg": {
+   "concept": "carta",
+   "variant": 0
+  },
+  "layout": "sinistra",
+  "font": "serif"
+ },
+ "carousel": [
+  {
+   "kicker": "Prima / dopo la fede",
+   "text": "Prima pensavo\nche piangere\nfosse da deboli.",
+   "numbered": false,
+   "note": "Scorri"
+  },
+  {
+   "kicker": "Poi ho letto",
+   "text": "«Gesù scoppiò\nin pianto».",
+   "sub": "Giovanni 11,35"
+  },
+  {
+   "kicker": "E nel Vangelo di oggi",
+   "text": "«Alla vista\ndella città\npianse su di essa».",
+   "sub": "Luca 19,41"
+  },
+  {
+   "kicker": "Ora so",
+   "text": "Le lacrime\nnon sono una sconfitta.\nSono preghiere\nsenza parole."
+  },
+  {
+   "kicker": "Ricordalo",
+   "text": "Dio non ti chiede\ndi farcela da solo.\nTi chiede di\naffidarti a Lui.",
+   "numbered": false,
+   "note": "Salvalo per i giorni difficili"
+  }
+ ],
+ "stories": [
+  {
+   "kicker": "Vangelo di oggi",
+   "text": "Gesù guardò la sua città\ne pianse.\nIl tuo dolore\nnon gli è indifferente.",
+   "sub": "Luca 19,41",
+   "note": "Invialo a chi ne ha bisogno",
+   "bg": {
+    "clip": "clips/persona-molo-nuvoloso.mp4",
+    "frame_t": 3.0
+   },
+   "layout": "centro",
+   "font": "serif"
+  },
+  {
+   "kicker": "Preghiera della sera",
+   "text": "Signore, ti affido\nchi sorride sempre\nper non far preoccupare\nnessuno.\nAbbraccialo Tu.",
+   "note": "Scrivi il suo nome",
+   "bg": {
+    "concept": "candela",
+    "variant": 2
+   },
+   "layout": "alto",
+   "font": "sans"
+  }
+ ],
+ "reel": {
+  "dur": 14,
+  "music": "proprio-the-light-that-remains.mp3",
+  "cuts": [
+   4.4,
+   8.3,
+   10.5
+  ],
+  "bg": {
+   "clip": "clips/persona-pioggia-verde.mp4",
+   "darken": 0.42
+  },
+  "voice": "/home/claude/work/voce.mp3",
+  "voice_delay": 0.6,
+  "music_vol_with_voice": 0.22,
+  "scenes": [
+   {
+    "style": "hook",
+    "text": "Se trattieni le lacrime\nper sembrare forte…",
+    "instant": true,
+    "reveal": 0.25
+   },
+   {
+    "style": "verse",
+    "kicker": "Nel Vangelo è scritto",
+    "text": "«Gesù scoppiò\nin pianto».",
+    "sub": "Giovanni 11,35"
+   },
+   {
+    "style": "hook",
+    "text": "Piangere\nnon è debolezza."
+   },
+   {
+    "style": "hook",
+    "text": "È un cuore\nche si affida a Dio.",
+    "small": "Invialo a chi porta tutto dentro"
+   }
+  ]
+ }
+}

@@ -110,5 +110,62 @@
   "prospettiva": "frontale",
   "composizione": "luce in basso al centro",
   "tono": "dark"
+ },
+ {
+  "soggetto": "carta pregiata",
+  "ambientazione": "tipografico editoriale",
+  "palette": "crema",
+  "luce": "neutra",
+  "prospettiva": "piatta",
+  "composizione": "solo tipografia",
+  "tono": "light",
+  "concept": "carta",
+  "variant": 0,
+  "layout": "sinistra",
+  "font": "serif",
+  "date": "2026-11-19",
+  "item": "slide_1"
+ },
+ {
+  "soggetto": "persona seduta sul pontile sotto un cielo nuvoloso",
+  "ambientazione": "lago",
+  "palette": "grigio-blu",
+  "luce": "cielo coperto",
+  "tono": "dark",
+  "concept": "clip:persona-molo-nuvoloso",
+  "prospettiva": "video reale",
+  "composizione": "video reale",
+  "layout": "centro",
+  "font": "serif",
+  "date": "2026-11-19",
+  "item": "story_1"
+ },
+ {
+  "soggetto": "candela accesa",
+  "ambientazione": "interno buio",
+  "palette": "ambra scura",
+  "luce": "fiamma calda puntiforme",
+  "prospettiva": "frontale ravvicinata",
+  "composizione": "destra",
+  "tono": "dark",
+  "concept": "candela",
+  "variant": 2,
+  "layout": "alto",
+  "font": "sans",
+  "date": "2026-11-19",
+  "item": "story_2"
+ },
+ {
+  "soggetto": "persona seduta che guarda la pioggia sul verde",
+  "ambientazione": "veranda nella natura",
+  "palette": "verde scuro",
+  "luce": "pioggia",
+  "tono": "dark",
+  "concept": "clip:persona-pioggia-verde",
+  "prospettiva": "video reale",
+  "composizione": "video reale",
+  "layout": "video",
+  "date": "2026-11-19",
+  "item": "reel"
  }
 ]
