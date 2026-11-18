@@ -1,4 +1,6 @@
 *.mp3
 *.wav
 *.m4a
-music/
+music/*
+# eccezione: solo i brani propri del proprietario (uso libero) possono stare nel repo pubblico
+!music/proprio-*.mp3
