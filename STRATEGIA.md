@@ -114,4 +114,4 @@ Esclusa la preghiera del mattino (vedi Storico). Evitare ripetizioni; preferire 
 
 ## 9. Voce narrante (ElevenLabs)
 Usarla quando migliora davvero il contenuto (tipicamente il Reel/Short/TikTok del giorno: una motivazione o un versetto spiegato), non per forza ogni giorno.
-Voce principale: **Daniela Narrator IT** (calda, elegante, adatta alla narrazione spirituale); alternativa maschile: **Elian – Warm Italian Narrator**. Tono sereno, vicino, autentico. Limiti e procedura in ISTRUZIONI.md.
+**Solo voci maschili** (decisione del proprietario, 19/11/2026): voce **Elian – Warm Italian Narrator**. Mai voci femminili (Daniela esclusa). Tono sereno, vicino, autentico. Limiti e procedura in ISTRUZIONI.md.

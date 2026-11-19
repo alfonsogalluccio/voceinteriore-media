@@ -47,7 +47,7 @@ Se nella cartella musica ci sono brani nuovi non presenti in `tools/music_librar
 
 ## Voce narrante ElevenLabs (connettore ElevenCreative)
 - **Limite: 600 caratteri di testo al giorno** (ora di Roma), da 0 a 600, mai di più. Registro: `tools/elevenlabs_log.json`. Prima di generare: `python3 tools/voce.py check "TESTO"`; se supera, accorciare o rinunciare. Mai usare crediti oltre il limite senza permesso del proprietario.
-- Generazione: `creative_generate_speech` con `model_id: "eleven_v4"`, `generations_count: 1`, voce `VZOd9FMXDnXRZpGn0thg` (Daniela) o `jMEwEYrOKjM6NDQNodla` (Elian). **Mai ripetere una chiamata per riprovare** (consuma di nuovo).
+- Generazione: `creative_generate_speech` con `model_id: "eleven_v4"`, `generations_count: 1`, voce **solo maschile** `jMEwEYrOKjM6NDQNodla` (Elian). Voci femminili escluse dal proprietario il 19/11/2026: non usare mai `VZOd9FMXDnXRZpGn0thg` (Daniela). **Mai ripetere una chiamata per riprovare** (consuma di nuovo).
 - Attendere con `creative_get_flow_run_status` fino a completed; solo allora registrare: `python3 tools/voce.py add "TESTO" "uso" FLOW_ID`.
 - Scaricare l'mp3 dal `content_url` e passarlo al video con `"voice": "<percorso mp3>"` nel reel (opzioni `voice_delay`, `music_vol_with_voice`). Il testo a schermo deve seguire ciò che la voce dice.
 - Se il download è bloccato (dominio elevenlabsusercontent.com non consentito), non generare altro: pubblicare il video senza voce e segnalarlo all'utente.
