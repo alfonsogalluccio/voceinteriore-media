@@ -1,0 +1,116 @@
+{
+ "date": "2026-11-20",
+ "seed": 20,
+ "carousel_style": {
+  "bg": {
+   "concept": "acquerello",
+   "variant": 1
+  },
+  "layout": "alto",
+  "font": "serif_i",
+  "size": 92
+ },
+ "carousel": [
+  {
+   "kicker": "Fai spazio a Dio",
+   "text": "3 cose da lasciare\nfuori dal tuo cuore",
+   "numbered": false,
+   "note": "Scorri",
+   "size": 104
+  },
+  {
+   "kicker": "Il Vangelo di oggi",
+   "text": "«La mia casa sarà\ncasa di preghiera»",
+   "sub": "Luca 19,46",
+   "numbered": false
+  },
+  {
+   "kicker": "Lascia fuori",
+   "text": "Il rancore.\nAl suo posto,\nil perdono.",
+   "number": "1"
+  },
+  {
+   "kicker": "Lascia fuori",
+   "text": "La paura del domani.\nAl suo posto,\nla fiducia.",
+   "number": "2"
+  },
+  {
+   "kicker": "Lascia fuori",
+   "text": "Il confronto\ncon gli altri.\nAl suo posto,\nla gratitudine.",
+   "number": "3"
+  },
+  {
+   "kicker": "Ricordalo",
+   "text": "«Non sapete che siete\ntempio di Dio e che\nlo Spirito di Dio\nabita in voi?»",
+   "sub": "1 Corinzi 3,16",
+   "numbered": false,
+   "note": "Salvalo e rileggilo stasera"
+  }
+ ],
+ "stories": [
+  {
+   "kicker": "Vangelo di oggi",
+   "text": "«La mia casa sarà\ncasa di preghiera».\nOggi apri la porta\ndel tuo cuore a Lui.",
+   "note": "Invialo a chi ami",
+   "bg": {
+    "clip": "clips/porta-bianca-arco-luce.mp4",
+    "frame_t": 4.0
+   },
+   "layout": "centro",
+   "font": "serif",
+   "sub": "Luca 19,46"
+  },
+  {
+   "kicker": "Giornata mondiale dell'infanzia",
+   "text": "Signore, proteggi\nogni bambino:\nchi è amato e chi aspetta\nancora un abbraccio.",
+   "note": "Scrivi il nome di un bambino che affidi a Dio",
+   "bg": {
+    "clip": "clips/bambini-foglie-autunno.mp4",
+    "frame_t": 5.0
+   },
+   "layout": "alto",
+   "font": "sans"
+  }
+ ],
+ "reel": {
+  "dur": 14,
+  "music": "proprio-fill-the-empty.mp3",
+  "cuts": [
+   3.7,
+   9.1,
+   10.9
+  ],
+  "bg": {
+   "clip": "clips/uomo-respira-mano-cuore.mp4",
+   "darken": 0.45
+  },
+  "voice": "/tmp/claude-0/-home-claude-voceinteriore-media/35d63d3a-c6f0-53c2-bfd4-e78eaf89bdb8/scratchpad/voce/voce.mp3",
+  "voice_delay": 0.6,
+  "scenes": [
+   {
+    "style": "hook",
+    "text": "Il tuo cuore\nè casa di Dio.",
+    "instant": true,
+    "cy": 470
+   },
+   {
+    "style": "verse",
+    "kicker": "La Parola dice",
+    "text": "«Non sapete che siete tempio di Dio e che lo Spirito di Dio abita in voi?»",
+    "sub": "1 Corinzi 3,16",
+    "cy": 470
+   },
+   {
+    "style": "hook",
+    "text": "Lascia fuori\nil rancore.",
+    "cy": 470
+   },
+   {
+    "style": "hook",
+    "text": "Fai spazio a Lui.",
+    "small": "Scrivi: Vieni, Signore",
+    "cy": 470
+   }
+  ]
+ }
+}

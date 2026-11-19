@@ -167,5 +167,61 @@
   "layout": "video",
   "date": "2026-11-19",
   "item": "reel"
+ },
+ {
+  "soggetto": "macchie di acquerello",
+  "ambientazione": "carta artistica",
+  "palette": "salvia",
+  "luce": "chiara diffusa",
+  "prospettiva": "piatta",
+  "composizione": "macchie libere",
+  "tono": "light",
+  "concept": "acquerello",
+  "variant": 1,
+  "layout": "alto",
+  "font": "serif_i",
+  "date": "2026-11-20",
+  "item": "slide_1"
+ },
+ {
+  "soggetto": "porta bianca sotto un arco tra ulivi e anfore",
+  "ambientazione": "cortile mediterraneo",
+  "palette": "bianco e verde",
+  "luce": "sole pieno",
+  "tono": "dark",
+  "concept": "clip:porta-bianca-arco-luce",
+  "prospettiva": "video reale",
+  "composizione": "video reale",
+  "layout": "centro",
+  "font": "serif",
+  "date": "2026-11-20",
+  "item": "story_1"
+ },
+ {
+  "soggetto": "due bambini seduti tra le foglie d'autunno con un cagnolino",
+  "ambientazione": "parco in autunno",
+  "palette": "giallo e marrone",
+  "luce": "luce d'autunno",
+  "tono": "dark",
+  "concept": "clip:bambini-foglie-autunno",
+  "prospettiva": "video reale",
+  "composizione": "video reale",
+  "layout": "alto",
+  "font": "sans",
+  "date": "2026-11-20",
+  "item": "story_2"
+ },
+ {
+  "soggetto": "uomo seduto che respira con la mano sul cuore",
+  "ambientazione": "terrazza nel verde",
+  "palette": "legno e verde",
+  "luce": "sole del tramonto",
+  "tono": "dark",
+  "concept": "clip:uomo-respira-mano-cuore",
+  "prospettiva": "video reale",
+  "composizione": "video reale",
+  "layout": "video",
+  "date": "2026-11-20",
+  "item": "reel"
  }
 ]
