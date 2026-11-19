@@ -114,4 +114,4 @@ Esclusa la preghiera del mattino (vedi Storico). Evitare ripetizioni; preferire 
 
 ## 9. Voce narrante (ElevenLabs)
 Usarla quando migliora davvero il contenuto (tipicamente il Reel/Short/TikTok del giorno: una motivazione o un versetto spiegato), non per forza ogni giorno.
-**Solo voci maschili** (decisione del proprietario, 19/11/2026): voci maschili in prova A/B (Elian, Daniele, Corrado Noventa, Luca Brasi Intimo: vedi ISTRUZIONI.md) con lettura animata tramite tag audio. Mai voci femminili (Daniela esclusa). Tono sereno, vicino, autentico. Limiti e procedura in ISTRUZIONI.md.
+**Voce ufficiale: "Voce Profonda Autoritaria ITA"** (scelta dal proprietario il 19/11/2026), sempre con lettura enfatizzata in base al testo, mai piatta. Mai voci femminili. Tono sereno, vicino, autentico. Limiti e procedura in ISTRUZIONI.md.

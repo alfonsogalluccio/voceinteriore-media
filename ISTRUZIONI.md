@@ -47,19 +47,17 @@ Se nella cartella musica ci sono brani nuovi non presenti in `tools/music_librar
 
 ## Voce narrante ElevenLabs (connettore ElevenCreative)
 - **Limite: 600 caratteri di testo al giorno** (ora di Roma), da 0 a 600, mai di più. Registro: `tools/elevenlabs_log.json`. Prima di generare: `python3 tools/voce.py check "TESTO"`; se supera, accorciare o rinunciare. Mai usare crediti oltre il limite senza permesso del proprietario.
-- Generazione: `creative_generate_speech` con `model_id: "eleven_v4"`, `generations_count: 1`, voce **solo maschile** `jMEwEYrOKjM6NDQNodla` (Elian). Voci femminili escluse dal proprietario il 19/11/2026: non usare mai `VZOd9FMXDnXRZpGn0thg` (Daniela). **Mai ripetere una chiamata per riprovare** (consuma di nuovo).
+- Generazione: `creative_generate_speech` con `model_id: "eleven_v4"`, `generations_count: 1`, voce **SEMPRE e SOLO "Voce Profonda Autoritaria ITA"** `lNsSu23XG0tAViX8bkjw` (voce scelta e creata dal proprietario, 19/11/2026). Nessun'altra voce, mai voci femminili. **Mai ripetere una chiamata per riprovare** (consuma di nuovo).
 - Attendere con `creative_get_flow_run_status` fino a completed; solo allora registrare: `python3 tools/voce.py add "TESTO" "uso" FLOW_ID`.
 - Scaricare l'mp3 dal `content_url` e passarlo al video con `"voice": "<percorso mp3>"` nel reel (opzioni `voice_delay`, `music_vol_with_voice`). Il testo a schermo deve seguire ciò che la voce dice.
 - Se il download è bloccato (dominio elevenlabsusercontent.com non consentito), non generare altro: pubblicare il video senza voce e segnalarlo all'utente.
 - Nel messaggio finale indicare sempre: caratteri usati oggi e residuo (o "non verificabile", senza inventare).
 - Testo per la voce: italiano naturale, frasi brevi, niente emoji né hashtag; versetti CEI esatti.
 
-### Voci maschili in prova e lettura animata (dal 19/11/2026)
-- Candidate (tutte maschili, italiano): **Elian** `jMEwEYrOKjM6NDQNodla` (calda, elegante) · **Daniele – Deep, Calm and Engaging** `UpS8xQpFvE8XAzZeW2Iu` (profonda, più espressiva) · **Corrado Noventa** `J098KweijcPPrlgo1irz` (profonda, drammatica e sentimentale) · **Luca Brasi Intimo** `JfjzwHPmCw6p6fdGVt4Y` (molto bassa, intima, quasi sussurrata).
-- Prova del 19/11 (stessa frase, analisi audio): escursione di tono Elian 6,4 semitoni · Luca Brasi 8,5 · Corrado 10,8 · Daniele 11,3. Elian è la più "piatta"; Daniele e Corrado le più animate. Ipotesi, non dato di pubblico: va verificata con i risultati.
-- **Test A/B nelle prossime 2 settimane**: alternare Daniele, Corrado e Luca Brasi Intimo (Elian come riferimento), una voce per video, annotando la voce in CONTENT_LOG.md. Confrontare il tempo medio di visione (averageTimeWatched) e le condivisioni da Buffer a parità di format. Poi tenere la voce migliore come voce ufficiale. Se il proprietario ne preferisce una all'ascolto, vale la sua scelta.
-- **Lettura animata, mai standard**: usare sempre i tag audio di eleven_v4 dove cambia l'emozione, per esempio `[softly]` nell'apertura, `[pause]` prima del versetto, `[warmly]` o `[hopeful]` sul messaggio finale, `[whispers]` per una frase intima. Usare anche puntini di sospensione per le pause e al massimo una parola in MAIUSCOLO per l'enfasi. I tag contano nei 600 caratteri.
-- **Clonazione**: mai clonare la voce di altre pagine o persone (serve il loro consenso). Una voce "nostra" si può creare con Voice Design (descrizione + frase scelte dal proprietario) oppure clonando la voce del proprietario stesso, solo con il suo consenso.
+### Voce ufficiale e lettura con enfasi (decisione del proprietario, 19/11/2026)
+- Usare **sempre** "Voce Profonda Autoritaria ITA" `lNsSu23XG0tAViX8bkjw` (profonda, calda, autorevole, ritmo solenne). Le prove A/B con altre voci sono annullate.
+- **Mai una semplice lettura**: dare sempre enfasi in base a ciò che si legge, con i tag audio di eleven_v4 posti dove cambia l'emozione. Esempi: apertura che aggancia `[softly]` o `[intense]`; prima del versetto `[pause]`; versetto `[slowly]` `[reverently]`; consolazione `[warmly]`; promessa o speranza `[hopeful]` o `[confident]`; frase intima `[whispers]`; invito finale `[warmly]`. Usare anche puntini di sospensione per le pause e al massimo una parola in MAIUSCOLO per l'enfasi. Il testo a schermo resta senza tag. I tag contano nei 600 caratteri.
+- **Clonazione**: mai clonare la voce di altre pagine o persone senza il loro consenso.
 
 ## Procedura sfondi (obbligatoria)
 1. `python3 tools/bg_log.py` → leggere gli ultimi 30 sfondi e scegliere concept, variante e layout nuovi (vedi STRATEGIA.md, sezione 1).
