@@ -223,5 +223,62 @@
   "layout": "video",
   "date": "2026-11-20",
   "item": "reel"
+ },
+ {
+  "soggetto": "cielo stellato e via lattea",
+  "ambientazione": "collina di notte",
+  "palette": "blu notte",
+  "luce": "stelle",
+  "prospettiva": "dal basso verso il cielo",
+  "composizione": "diagonale",
+  "tono": "dark",
+  "concept": "stelle",
+  "variant": 0,
+  "layout": "centro",
+  "font": "serif",
+  "date": "2026-11-21",
+  "item": "slide_1"
+ },
+ {
+  "soggetto": "mano che tiene un fiore bianco",
+  "ambientazione": "primo piano quotidiano",
+  "palette": "bianco e grigio",
+  "luce": "luce morbida di giorno",
+  "tono": "dark",
+  "concept": "clip:mano-fiore-bianco",
+  "prospettiva": "video reale",
+  "composizione": "video reale",
+  "layout": "centro",
+  "font": "serif_i",
+  "date": "2026-11-21",
+  "item": "story_1"
+ },
+ {
+  "soggetto": "croce di luce",
+  "ambientazione": "spazio simbolico scuro",
+  "palette": "ambra",
+  "luce": "luce che nasce dalla croce",
+  "prospettiva": "frontale",
+  "composizione": "centrale",
+  "tono": "dark",
+  "concept": "croce",
+  "variant": 0,
+  "layout": "centro",
+  "font": "sans",
+  "date": "2026-11-21",
+  "item": "story_2"
+ },
+ {
+  "soggetto": "persona sola sulla riva sotto un cielo rosa",
+  "ambientazione": "spiaggia con bassa marea",
+  "palette": "rosa e lilla",
+  "luce": "tramonto",
+  "tono": "dark",
+  "concept": "clip:persona-riva-tramonto-rosa",
+  "prospettiva": "video reale",
+  "composizione": "video reale",
+  "layout": "video",
+  "date": "2026-11-21",
+  "item": "reel"
  }
 ]
