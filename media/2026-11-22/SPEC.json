@@ -1,0 +1,108 @@
+{
+ "date": "2026-11-22",
+ "seed": 22,
+ "carousel_style": {
+  "bg": {
+   "concept": "citta",
+   "variant": 1
+  },
+  "layout": "alto",
+  "font": "sans",
+  "size": 80
+ },
+ "carousel": [
+  {
+   "kicker": "Oggi è Cristo Re",
+   "text": "5 posti dove Gesù\nti aspetta\nquesta settimana",
+   "numbered": false,
+   "size": 96
+  },
+  {
+   "kicker": "Chi ha fame",
+   "text": "Anche di ascolto.\nUn caffè offerto\nvale più di un consiglio."
+  },
+  {
+   "kicker": "Chi ha sete",
+   "text": "Di una parola buona.\nDilla oggi,\nnon domani."
+  },
+  {
+   "kicker": "Lo straniero",
+   "text": "Il collega nuovo,\nil vicino che non saluti.\nFai tu il primo passo."
+  },
+  {
+   "kicker": "Chi è malato",
+   "text": "Quella telefonata\nche rimandi da giorni.\nFalla stasera."
+  },
+  {
+   "kicker": "Chi è in carcere",
+   "text": "Anche chi è prigioniero\ndi un errore.\nDagli una seconda\npossibilità."
+  },
+  {
+   "kicker": "Il Vangelo di oggi",
+   "text": "«Tutto quello che\navete fatto a uno solo\ndi questi miei fratelli\npiù piccoli,\nl'avete fatto a me».",
+   "sub": "Matteo 25,40",
+   "numbered": false
+  }
+ ],
+ "stories": [
+  {
+   "kicker": "Oggi è Cristo Re",
+   "text": "Ultima domenica\ndell'anno liturgico:\naffida a Lui tutto\nciò che hai vissuto.",
+   "note": "Domenica prossima inizia l'Avvento",
+   "bg": {
+    "clip": "clips/cristo-tra-nuvole.mp4",
+    "frame_t": 4.0
+   },
+   "layout": "alto",
+   "font": "serif"
+  },
+  {
+   "kicker": "Domanda della sera",
+   "text": "Chi è stato\n«Gesù» per te\nquesta settimana?",
+   "note": "Rispondi a questa storia",
+   "bg": {
+    "concept": "colore",
+    "variant": 1
+   },
+   "layout": "alto",
+   "font": "serif_i"
+  }
+ ],
+ "reel": {
+  "dur": 15,
+  "music": "proprio-musica.mp3",
+  "cuts": [
+   4.9,
+   11.0
+  ],
+  "bg": {
+   "clip": "clips/nonna-tavola-candele.mp4",
+   "darken": 0.55
+  },
+  "voice": "(scratchpad)/voce/voce.mp3",
+  "voice_delay": 0.2,
+  "scenes": [
+   {
+    "style": "hook",
+    "text": "Oggi hai\nincontrato Gesù.\nForse non l'hai\nriconosciuto.",
+    "instant": true,
+    "cy": 1250,
+    "size": 96,
+    "reveal": 0.4
+   },
+   {
+    "style": "verse",
+    "kicker": "Gesù dice",
+    "text": "«Tutto quello che avete fatto a uno solo di questi miei fratelli più piccoli, l'avete fatto a me».",
+    "sub": "Matteo 25,40",
+    "cy": 1300
+   },
+   {
+    "style": "hook",
+    "text": "Il tuo Re ha il volto\ndi chi ha bisogno di te.",
+    "small": "Invialo a chi si prende cura degli altri",
+    "cy": 1130
+   }
+  ]
+ }
+}

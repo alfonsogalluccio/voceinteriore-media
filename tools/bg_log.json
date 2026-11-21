@@ -280,5 +280,62 @@
   "layout": "video",
   "date": "2026-11-21",
   "item": "reel"
+ },
+ {
+  "soggetto": "skyline con finestre accese",
+  "ambientazione": "città di sera",
+  "palette": "tramonto urbano",
+  "luce": "luci della città sfocate",
+  "prospettiva": "frontale dal basso",
+  "composizione": "skyline in basso, bokeh in alto",
+  "tono": "dark",
+  "concept": "citta",
+  "variant": 1,
+  "layout": "alto",
+  "font": "sans",
+  "date": "2026-11-22",
+  "item": "slide_1"
+ },
+ {
+  "soggetto": "statua di Cristo a braccia aperte tra le nuvole",
+  "ambientazione": "sopra la nebbia",
+  "palette": "grigio perla",
+  "luce": "nebbia luminosa",
+  "tono": "dark",
+  "concept": "clip:cristo-tra-nuvole",
+  "prospettiva": "video reale",
+  "composizione": "video reale",
+  "layout": "alto",
+  "font": "serif",
+  "date": "2026-11-22",
+  "item": "story_1"
+ },
+ {
+  "soggetto": "forma geometrica",
+  "ambientazione": "grafica moderna a colore pieno",
+  "palette": "petrolio",
+  "luce": "piatta",
+  "prospettiva": "piatta",
+  "composizione": "fascia",
+  "tono": "dark",
+  "concept": "colore",
+  "variant": 1,
+  "layout": "alto",
+  "font": "serif_i",
+  "date": "2026-11-22",
+  "item": "story_2"
+ },
+ {
+  "soggetto": "figlio che serve il pranzo alla nonna sorridente",
+  "ambientazione": "tavola con candele",
+  "palette": "bianco e rosso",
+  "luce": "luce calda d'interno",
+  "tono": "dark",
+  "concept": "clip:nonna-tavola-candele",
+  "prospettiva": "video reale",
+  "composizione": "video reale",
+  "layout": "video",
+  "date": "2026-11-22",
+  "item": "reel"
  }
 ]
