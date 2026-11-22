@@ -337,5 +337,62 @@
   "layout": "video",
   "date": "2026-11-22",
   "item": "reel"
+ },
+ {
+  "soggetto": "carta pregiata",
+  "ambientazione": "tipografico editoriale",
+  "palette": "crema",
+  "luce": "neutra",
+  "prospettiva": "piatta",
+  "composizione": "solo tipografia",
+  "tono": "light",
+  "concept": "carta",
+  "variant": 2,
+  "layout": "centro",
+  "font": "serif_i",
+  "date": "2026-11-23",
+  "item": "slide_1"
+ },
+ {
+  "soggetto": "moka sul fornello e tazzine in una cucina rosa",
+  "ambientazione": "cucina",
+  "palette": "rosa e rame",
+  "luce": "luce calda",
+  "tono": "dark",
+  "concept": "clip:moka-fornello-cucina",
+  "prospettiva": "video reale",
+  "composizione": "video reale",
+  "layout": "centro",
+  "font": "serif",
+  "date": "2026-11-23",
+  "item": "story_1"
+ },
+ {
+  "soggetto": "lago che riflette le colline",
+  "ambientazione": "lago",
+  "palette": "azzurro",
+  "luce": "calma diffusa",
+  "prospettiva": "simmetrica",
+  "composizione": "specchio orizzontale",
+  "tono": "dark",
+  "concept": "lago",
+  "variant": 1,
+  "layout": "centro",
+  "font": "sans",
+  "date": "2026-11-23",
+  "item": "story_2"
+ },
+ {
+  "soggetto": "mamma che lavora al computer mentre il bimbo dorme",
+  "ambientazione": "camera da letto",
+  "palette": "crema e ambra",
+  "luce": "luce calda",
+  "tono": "dark",
+  "concept": "clip:mamma-lavora-bimbo-dorme",
+  "prospettiva": "video reale",
+  "composizione": "video reale",
+  "layout": "video",
+  "date": "2026-11-23",
+  "item": "reel"
  }
 ]
