@@ -3430,5 +3430,37 @@
   "tono": "light",
   "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026; estratto 5-20 s",
   "originale": "20488159-hd_1080_1920_30fps.mp4"
+ },
+ {
+  "file": "clips/uomo-pxb199623.mp4",
+  "poster": "clips/uomo-pxb199623.jpg",
+  "dur": 12,
+  "soggetto": "(da verificare) man, walking, suit, business, office",
+  "ambientazione": "da verificare",
+  "palette": "da verificare",
+  "luce": "da verificare",
+  "tono": "dark",
+  "fonte": "Pixabay (Content License, uso libero) – autore: MujtabaAhemad – scaricato automaticamente il 23/11/2026 (ricerca: man hoodie walking)",
+  "originale": "199623-910995789_large.mp4",
+  "pexels_id": "pxb199623",
+  "pexels_url": "https://pixabay.com/videos/id-199623/",
+  "da_verificare": true,
+  "ritaglio_centrale": true
+ },
+ {
+  "file": "clips/uomo-pxb282995.mp4",
+  "poster": "clips/uomo-pxb282995.jpg",
+  "dur": 14,
+  "soggetto": "(da verificare) hiking, walking, trail, man, alone, single, middle-aged, adult, human, forest, landscape, path, environment, fog, winter, frost, woodlands, wood, mist, sunbeams",
+  "ambientazione": "da verificare",
+  "palette": "da verificare",
+  "luce": "da verificare",
+  "tono": "dark",
+  "fonte": "Pixabay (Content License, uso libero) – autore: Matthias_Groeneveld – scaricato automaticamente il 23/11/2026 (ricerca: man hoodie walking)",
+  "originale": "282995_large.mp4",
+  "pexels_id": "pxb282995",
+  "pexels_url": "https://pixabay.com/videos/id-282995/",
+  "da_verificare": true,
+  "ritaglio_centrale": true
  }
 ]
