@@ -1,6 +1,6 @@
 # Video già presenti nella libreria (codice Pexels)
 
-Aggiornato al 23/11/2026 – 220 video. Prima di caricare un video, cerca qui il numero iniziale del file (es. 6328343). Se c'è, non serve mandarlo. I video da Pinterest o Pixabay non hanno codice Pexels (—).
+Aggiornato al 23/11/2026 – 231 video. Prima di caricare un video, cerca qui il numero iniziale del file (es. 6328343). Se c'è, non serve mandarlo. I video da Pinterest o Pixabay non hanno codice Pexels (—).
 
 | Codice Pexels | Nome nella libreria | Soggetto |
 |---|---|---|
@@ -167,7 +167,18 @@ Aggiornato al 23/11/2026 – 220 video. Prima di caricare un video, cerca qui il
 | 12594869 | alba-erba-alta-sole | sole basso tra le canne e l'erba alta, una persona cammina in lontananza |
 | 12617734 | valle-nebbia-cascata-vette | la nebbia si dirada su una valle con cascata e vette innevate (drone) |
 | 12621292 | prato-verde-montagna-drone | prato verde di montagna con sentieri e animali al pascolo visto dal drone |
+| 12621308 | valle-verde-fiume-drone | valle verde con un fiume e un sentiero visti dal drone |
+| 12623231 | cupola-chiesa-affreschi | cupole di una chiesa barocca con affreschi e oro, la camera ruota guardando in alto |
+| 12684396 | famiglia-spiaggia-alba | genitori e bambino che giocano sulla riva al tramonto (breve) |
+| 12777649 | luna-mare-notte | falce di luna che si riflette sul mare di notte |
+| 12786815 | duomo-milano | facciata del Duomo di Milano vista dal basso |
+| 12798338 | uomo-terrazza-mare-nuvole | uomo che esce dal riparo e si ferma sul bordo di una terrazza davanti a un mare di nuvole |
+| 12809213 | nuvole-rosa-cielo-sera | nuvole rosa e arancio nel cielo azzurro della sera |
+| 12867852 | tramonto-viola-palma-mare | cielo viola e arancio sopra il mare con una palma in controluce |
+| 12935202 | manarola-cinque-terre | Manarola alle Cinque Terre con il mare e gli scogli (breve) |
 | 13034773 | luna-nuvole-viola | falce di luna tra nuvole |
+| 13038441 | autobus-persone-controluce | persone in piedi su un autobus in controluce |
+| 13075911 | tramonto-mare-sassi | sole che tramonta sul mare con onde sulla spiaggia di sassi |
 | 13623899 | nuvola-rosa-luna | nuvola rosa e luna |
 | 14043578 | lago-montagne-molo | lago tra le montagne con molo |
 | 14330632 | foglie-sole | foglie con il sole dietro |
@@ -226,4 +237,4 @@ Aggiornato al 23/11/2026 – 220 video. Prima di caricare un video, cerca qui il
 | — | viale-notte-lampioni | viale alberato con lampioni e foglie |
 
 ## Scartati (non rimandarli)
-4896507 (logo Apple) · 7083630 (pub, alcol) · 7394163 (cuore con scritta in inglese) · 7597168 (lista in inglese leggibile) · 9756317 (coppia che balla in barca) · 10495025 (spiaggia in costume) · 11906866 (via con pubblicità) · 11912985, 11912988 (Carabinieri, scritte) · 12571082 (soccorritori con loghi di associazioni) · 12164762 (libro con testo turco leggibile) · 12390852 (bandiera della Colombia) · 12605513 (scia d'aereo, troppo simile a un video già presente)
+4896507 (logo Apple) · 7083630 (pub, alcol) · 7394163 (cuore con scritta in inglese) · 7597168 (lista in inglese leggibile) · 9756317 (coppia che balla in barca) · 10495025 (spiaggia in costume) · 11906866 (via con pubblicità) · 11912985, 11912988 (Carabinieri, scritte) · 12571082 (soccorritori con loghi di associazioni) · 12164762 (libro con testo turco leggibile) · 12390852 (bandiera della Colombia) · 12605513 (scia d'aereo, troppo simile a un video già presente) · 13062865 (tazze con logo di una catena di caffè) · 13062861, 12694168, 13001524, 12986236 (caffè/colazione e girasoli: ne abbiamo già molti)
