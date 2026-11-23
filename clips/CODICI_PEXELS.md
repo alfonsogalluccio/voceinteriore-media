@@ -1,6 +1,6 @@
 # Video già presenti nella libreria (codice Pexels)
 
-Aggiornato al 23/11/2026 – 231 video. Prima di caricare un video, cerca qui il numero iniziale del file (es. 6328343). Se c'è, non serve mandarlo. I video da Pinterest o Pixabay non hanno codice Pexels (—).
+Aggiornato al 23/11/2026 – 232 video. Prima di caricare un video, cerca qui il numero iniziale del file (es. 6328343). Se c'è, non serve mandarlo. I video da Pinterest o Pixabay non hanno codice Pexels (—).
 
 | Codice Pexels | Nome nella libreria | Soggetto |
 |---|---|---|
@@ -175,6 +175,7 @@ Aggiornato al 23/11/2026 – 231 video. Prima di caricare un video, cerca qui il
 | 12798338 | uomo-terrazza-mare-nuvole | uomo che esce dal riparo e si ferma sul bordo di una terrazza davanti a un mare di nuvole |
 | 12809213 | nuvole-rosa-cielo-sera | nuvole rosa e arancio nel cielo azzurro della sera |
 | 12867852 | tramonto-viola-palma-mare | cielo viola e arancio sopra il mare con una palma in controluce |
+| 12881862 | persona-corre-neve-bosco | persona che corre felice a braccia aperte nella neve verso la camera |
 | 12935202 | manarola-cinque-terre | Manarola alle Cinque Terre con il mare e gli scogli (breve) |
 | 13034773 | luna-nuvole-viola | falce di luna tra nuvole |
 | 13038441 | autobus-persone-controluce | persone in piedi su un autobus in controluce |
