@@ -1,6 +1,6 @@
 # Video già presenti nella libreria (codice Pexels)
 
-Aggiornato al 23/11/2026 – 240 video. Prima di caricare un video, cerca qui il numero iniziale del file (es. 6328343). Se c'è, non serve mandarlo. I video da Pinterest o Pixabay non hanno codice Pexels (—).
+Aggiornato al 23/11/2026 – 250 video. Prima di caricare un video, cerca qui il numero iniziale del file (es. 6328343). Se c'è, non serve mandarlo. I video da Pinterest o Pixabay non hanno codice Pexels (—).
 
 | Codice Pexels | Nome nella libreria | Soggetto |
 |---|---|---|
@@ -189,7 +189,17 @@ Aggiornato al 23/11/2026 – 240 video. Prima di caricare un video, cerca qui il
 | 13454243 | viale-cipressi-toscana | viale sterrato tra i cipressi verso una casa di campagna |
 | 13517869 | fori-imperiali-roma-tramonto | Fori Imperiali di Roma con il Vittoriano sullo sfondo |
 | 13623899 | nuvola-rosa-luna | nuvola rosa e luna |
+| 13968290 | luna-rosa-uccelli-colline | luna piena nel cielo rosa con stormi di uccelli sopra le colline |
+| 13988707 | papa-figli-spiaggia-onde | papà che cammina sulla riva mentre i figli giocano con le onde (breve) |
+| 13988715 | mano-genitore-bambino-mare | mano di un adulto che tiene la mano di un bambino davanti al mare |
+| 14035447 | mamma-carezza-figlia-spiaggia | mamma inginocchiata che accarezza il viso della figlia in riva al mare |
 | 14043578 | lago-montagne-molo | lago tra le montagne con molo |
+| 14053780 | mamma-figlia-mano-spiaggia | mamma e figlia che camminano per mano sulla riva |
+| 14202203 | famiglia-coperta-tramonto | papà, mamma e bambino abbracciati in una coperta al tramonto |
+| 14240854 | uomo-albero-solitario-alba | uomo davanti a un albero solitario in una pianura |
+| 14241281 | uomo-casa-diroccata-albero | uomo di spalle davanti a una vecchia casa diroccata e a un albero |
+| 14259282 | uomo-pontile-alba | uomo in piedi in fondo a un pontile che guarda il mare all'alba |
+| 14293124 | uomo-trazioni-parco | uomo che fa trazioni alla sbarra in un parco all'aperto |
 | 14330632 | foglie-sole | foglie con il sole dietro |
 | 14545383 | tramonto-citta | tramonto drammatico sui tetti |
 | 14907172 | mani-foglie-autunno | mani che tengono foglie d'autunno |
@@ -246,4 +256,4 @@ Aggiornato al 23/11/2026 – 240 video. Prima di caricare un video, cerca qui il
 | — | viale-notte-lampioni | viale alberato con lampioni e foglie |
 
 ## Scartati (non rimandarli)
-4896507 (logo Apple) · 7083630 (pub, alcol) · 7394163 (cuore con scritta in inglese) · 7597168 (lista in inglese leggibile) · 9756317 (coppia che balla in barca) · 10495025 (spiaggia in costume) · 11906866 (via con pubblicità) · 11912985, 11912988 (Carabinieri, scritte) · 12571082 (soccorritori con loghi di associazioni) · 12164762 (libro con testo turco leggibile) · 12390852 (bandiera della Colombia) · 12605513 (scia d'aereo, troppo simile a un video già presente) · 13062865 (tazze con logo di una catena di caffè) · 13062861, 12694168, 13001524, 12986236 (caffè/colazione e girasoli: ne abbiamo già molti) · 13227637, 13278946 (città distrutta dal terremoto: dolore reale) · 13446869 (traffico con targhe e scritte) · 13139547 (coppia, scritta sulla maglietta) · 13279183 (macchina del caffè con marchio) · 13329293 (scia d'aereo) · 13372516 (gara di corsa con loghi degli sponsor) · 13550135, 13550157 (portatile e caffè: ne abbiamo già)
+4896507 (logo Apple) · 7083630 (pub, alcol) · 7394163 (cuore con scritta in inglese) · 7597168 (lista in inglese leggibile) · 9756317 (coppia che balla in barca) · 10495025 (spiaggia in costume) · 11906866 (via con pubblicità) · 11912985, 11912988 (Carabinieri, scritte) · 12571082 (soccorritori con loghi di associazioni) · 12164762 (libro con testo turco leggibile) · 12390852 (bandiera della Colombia) · 12605513 (scia d'aereo, troppo simile a un video già presente) · 13062865 (tazze con logo di una catena di caffè) · 13062861, 12694168, 13001524, 12986236 (caffè/colazione e girasoli: ne abbiamo già molti) · 13227637, 13278946 (città distrutta dal terremoto: dolore reale) · 13446869 (traffico con targhe e scritte) · 13139547 (coppia, scritta sulla maglietta) · 13279183 (macchina del caffè con marchio) · 13329293 (scia d'aereo) · 13372516 (gara di corsa con loghi degli sponsor) · 13550135, 13550157 (portatile e caffè: ne abbiamo già) · 13982570, 14267963 (tramonti sul mare: ne abbiamo molti) · 13939996, 13955919 (mongolfiere con scritte) · 14039595 (colline verdi: ne abbiamo) · 14074401 (girasoli: già presenti) · 14218774 (tablet con grafici)
