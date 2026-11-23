@@ -104,4 +104,5 @@ Ogni giorno annotare in TENDENZE.md almeno 1 osservazione utile trovata sul web 
 Aggiungere una riga a CONTENT_LOG.md per ogni giornata (data, tema, format, versetti, brano, concept grafici e layout, eventuale esperimento) e fare push.
 
 ## Controllo pubblicazioni
-Con `list_posts` (status sent / error) verificare le ultime 24 ore. Per ogni errore: leggere il messaggio, correggere (link, formato, testo) e riprogrammare. Se non risolvibile, segnalarlo all'utente con il motivo esatto.
+Con `list_posts` (status sent / error) verificare le ultime 24 ore. Per ogni errore: leggere il messaggio, correggere (link, formato, testo) e riprogrammare.
+- Errore "stuck processing" (o post fermo in "sending" da più di 30 minuti): è un blocco temporaneo di Buffer. Riprogrammare lo stesso post 5-10 minuti più tardi (`edit_post` con `customScheduled`) e verificare che diventi "sent". Così è stata recuperata la Storia del 23/11 (pubblicata alle 09:08). Se non risolvibile, segnalarlo all'utente con il motivo esatto.
