@@ -1,6 +1,6 @@
 # Video già presenti nella libreria (codice Pexels)
 
-Aggiornato al 23/11/2026 – 217 video. Prima di caricare un video, cerca qui il numero iniziale del file (es. 6328343). Se c'è, non serve mandarlo. I video da Pinterest o Pixabay non hanno codice Pexels (—).
+Aggiornato al 23/11/2026 – 220 video. Prima di caricare un video, cerca qui il numero iniziale del file (es. 6328343). Se c'è, non serve mandarlo. I video da Pinterest o Pixabay non hanno codice Pexels (—).
 
 | Codice Pexels | Nome nella libreria | Soggetto |
 |---|---|---|
@@ -164,6 +164,9 @@ Aggiornato al 23/11/2026 – 217 video. Prima di caricare un video, cerca qui il
 | 12513942 | arcobaleno-cielo-grigio | arcobaleno nel cielo grigio sopra gli alberi |
 | 12529092 | mare-turchese-scogli | mare turchese sopra gli scogli con ombrelloni |
 | 12558616 | papa-figlia-albero-autunno | papà che tiene in braccio la figlia sotto un albero d'autunno |
+| 12594869 | alba-erba-alta-sole | sole basso tra le canne e l'erba alta, una persona cammina in lontananza |
+| 12617734 | valle-nebbia-cascata-vette | la nebbia si dirada su una valle con cascata e vette innevate (drone) |
+| 12621292 | prato-verde-montagna-drone | prato verde di montagna con sentieri e animali al pascolo visto dal drone |
 | 13034773 | luna-nuvole-viola | falce di luna tra nuvole |
 | 13623899 | nuvola-rosa-luna | nuvola rosa e luna |
 | 14043578 | lago-montagne-molo | lago tra le montagne con molo |
@@ -223,4 +226,4 @@ Aggiornato al 23/11/2026 – 217 video. Prima di caricare un video, cerca qui il
 | — | viale-notte-lampioni | viale alberato con lampioni e foglie |
 
 ## Scartati (non rimandarli)
-9756317 (coppia che balla in barca) · 10495025 (spiaggia in costume) · 11906866 (via commerciale con pubblicità) · 11912985, 11912988 (Carabinieri, scritte) · 7083630 (pub, alcol) · 7394163 (cuore con scritta in inglese) · 7597168 (lista in inglese leggibile) · 4896507 (logo Apple)
+4896507 (logo Apple) · 7083630 (pub, alcol) · 7394163 (cuore con scritta in inglese) · 7597168 (lista in inglese leggibile) · 9756317 (coppia che balla in barca) · 10495025 (spiaggia in costume) · 11906866 (via con pubblicità) · 11912985, 11912988 (Carabinieri, scritte) · 12571082 (soccorritori con loghi di associazioni) · 12164762 (libro con testo turco leggibile) · 12390852 (bandiera della Colombia) · 12605513 (scia d'aereo, troppo simile a un video già presente)

@@ -2602,5 +2602,41 @@
   "tono": "light",
   "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026; ritagliato in verticale da un video orizzontale (qualità un po' più morbida), piccolo logo sulla giacca sfumato",
   "originale": "11439817-hd_1920_1080_25fps.mp4"
+ },
+ {
+  "file": "clips/alba-erba-alta-sole.mp4",
+  "poster": "clips/alba-erba-alta-sole.jpg",
+  "dur": 11.6,
+  "soggetto": "sole basso tra le canne e l'erba alta, una persona cammina in lontananza",
+  "ambientazione": "campo di erba alta",
+  "palette": "oro e verde, cielo azzurro",
+  "luce": "sole all'alba controluce",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
+  "originale": "12594869-uhd_2160_3840_60fps.mp4"
+ },
+ {
+  "file": "clips/valle-nebbia-cascata-vette.mp4",
+  "poster": "clips/valle-nebbia-cascata-vette.jpg",
+  "dur": 15.0,
+  "soggetto": "la nebbia si dirada su una valle con cascata e vette innevate (drone)",
+  "ambientazione": "montagna con bosco di abeti",
+  "palette": "bianco, grigio pietra e verde scuro",
+  "luce": "nebbia che si apre, prima luce sulle vette",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
+  "originale": "12617734_1080_1920_60fps.mp4"
+ },
+ {
+  "file": "clips/prato-verde-montagna-drone.mp4",
+  "poster": "clips/prato-verde-montagna-drone.jpg",
+  "dur": 15.0,
+  "soggetto": "prato verde di montagna con sentieri e animali al pascolo visto dal drone",
+  "ambientazione": "pascolo in collina",
+  "palette": "verde brillante",
+  "luce": "cielo bianco luminoso",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
+  "originale": "12621292_2160_3840_60fps.mp4"
  }
 ]
