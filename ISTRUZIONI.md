@@ -35,7 +35,8 @@ Se nella cartella musica ci sono brani nuovi non presenti in `tools/music_librar
 ```
 - `post` (oggetto singolo, stessi campi di una slide) OPPURE `carousel`.
 - **Sfondi** (`bg`): concept disponibili in `tools/scenes.py` → candela, finestra, montagne, mare, bosco, stelle, citta, pioggia, acquerello, carta, colore (5 varianti), lago, grano, croce, sentiero, cielo (vecchio stile, con `palette`). Ogni concept ha 3 varianti (`variant` 0-2) con colori e composizioni diverse. Foto vere: `{"photo":"backgrounds/<file>.jpg","meta":{...}}`.
-- **Layout**: centro, alto, basso, sinistra, grande. **Font**: serif_i, serif, sans. `frame`: true/false.
+- **Layout**: centro, alto, basso, sinistra, grande. **Font**: serif_i, serif, sans, impact (registro "forte": Montserrat ExtraBold maiuscolo; le parole tra *asterischi* diventano oro). `frame`: true/false.
+- **Reel**: ogni scena accetta `"font": "impact"` (stesso effetto, *parole* in oro). Usarlo per i contenuti del registro FORTE (STRATEGIA, sezione 11); per il registro CUORE restano i serif.
 - Andare a capo con `\n` per evitare parole isolate. Cambiare `seed` ogni giorno.
 
 ## Video reali (cartella clips/)

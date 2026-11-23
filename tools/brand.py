@@ -9,6 +9,7 @@ SERIF_I = F+"cormorant-garamond-latin-500-italic.woff"
 SERIF   = F+"cormorant-garamond-latin-600-normal.woff"
 SANS    = F+"montserrat-latin-500-normal.woff"
 SANS_B  = F+"montserrat-latin-600-normal.woff"
+SANS_X  = F+"montserrat-latin-800-normal.woff"   # registro "forte": maiuscolo d'impatto
 GOLD = (238, 202, 132)
 CREAM = (250, 243, 230)
 

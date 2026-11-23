@@ -30,7 +30,12 @@ class Scene:
         style = s.get("style", "body")
         size = {"hook": 104, "body": 88, "verse": 84, "cta": 96}[style]
         fp = SERIF_I if style in ("verse", "body", "hook") else SERIF
-        self.f, self.words, self.ybot = layout_words(s["text"], fp, s.get("size", size), 900, W/2, s.get("cy", 880))
+        text = s["text"]
+        if s.get("font") == "impact":   # registro "forte": maiuscolo d'impatto, *parole* in oro
+            fp = SANS_X; text = text.upper(); size = int(size * 0.8)
+        self.hl = {w.strip(".,;:!?«»\"'") for m in __import__("re").findall(r"\*([^*]+)\*", text) for w in m.split()}
+        text = text.replace("*", "")
+        self.f, self.words, self.ybot = layout_words(text, fp, s.get("size", size), 900, W/2, s.get("cy", 880))
         self.reveal = s.get("reveal", min(1.4, 0.18 * len(self.words)))
     def draw(self, t):
         layer = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(layer)
@@ -41,7 +46,8 @@ class Scene:
             else: a = ease((lt - self.reveal * i / max(1, n)) / 0.28) * out
             if a <= 0: continue
             dy = (1 - a) * 22
-            d.text((x, y + dy), wd, font=self.f, fill=CREAM + (int(255 * a),))
+            col = GOLD if wd.strip(".,;:!?«»\"'") in self.hl else CREAM
+            d.text((x, y + dy), wd, font=self.f, fill=col + (int(255 * a),))
         if self.s.get("kicker"):
             a = ease(lt / 0.3) * out; tmp = Image.new("RGBA", (W, H), (0,0,0,0))
             spaced(tmp, self.s["kicker"].upper(), SANS, 32, W//2, self.s.get("cy", 880) - 260, fill=GOLD, track=8)

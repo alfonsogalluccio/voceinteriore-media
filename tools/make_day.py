@@ -2,9 +2,9 @@
 Uso: python3 make_day.py day.json OUT_DIR MUSIC_DIR
 Produce: post.jpg o slide_1..n.jpg (carosello), story_1..n.jpg, reel.mp4, preview.jpg, report.txt
 Ogni elemento può avere: "bg" (concept o foto, vedi tools/scenes.py), "layout" (centro|alto|basso|sinistra|grande),
-"font" (serif_i|serif|sans), "frame" (true/false). Il registro tools/bg_log.json blocca le ripetizioni
+"font" (serif_i|serif|sans|impact: maiuscolo d'impatto, *parole* in oro), "frame" (true/false). Il registro tools/bg_log.json blocca le ripetizioni
 (per forzare: "allow_repeat": true nello SPEC, solo con motivo scritto in "repeat_reason")."""
-import sys, os, json, datetime
+import sys, os, re, json, datetime
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from brand import *
 import scenes, bg_log
@@ -13,7 +13,7 @@ from PIL import Image, ImageDraw, ImageFilter
 import numpy as np
 
 INK = (34, 28, 62); INK_GOLD = (150, 104, 40)
-FONTS = {"serif_i": SERIF_I, "serif": SERIF, "sans": SANS_B}
+FONTS = {"serif_i": SERIF_I, "serif": SERIF, "sans": SANS_B, "impact": SANS_X}
 
 def scrim(img, y0, y1, k=0.45):
     """Velatura morbida dietro al testo per la leggibilità su sfondi ricchi."""
@@ -22,7 +22,11 @@ def scrim(img, y0, y1, k=0.45):
     a = Image.fromarray((np.broadcast_to(m, (h, w)) * 255).astype(np.uint8))
     img.paste((0, 0, 0), mask=a)
 
-def block(img, text, fpath, size, x, cy, maxw, fill, align="center", shadow=True, lh=1.22):
+def block(img, text, fpath, size, x, cy, maxw, fill, align="center", shadow=True, lh=1.22, hlfill=None):
+    """Parole tra *asterischi* = evidenziate in oro (hlfill). Con il font impact il testo va in maiuscolo."""
+    if fpath == SANS_X: text = text.upper(); lh = min(lh, 1.08)
+    hl = {re.sub(r"[^\w]", "", w) for w in re.findall(r"\*([^*]+)\*", text) for w in w.split()}
+    text = text.replace("*", ""); hlfill = hlfill or GOLD
     d = ImageDraw.Draw(img)
     while True:
         f = font(fpath, size); lines = wrap(d, text, f, maxw); Hh = int(len(lines) * size * lh)
@@ -35,7 +39,12 @@ def block(img, text, fpath, size, x, cy, maxw, fill, align="center", shadow=True
         for i, ln in enumerate(lines): sd.text((xpos(ln), y0 + i * size * lh + 3), ln, font=f, fill=(0, 0, 0, 150))
         img.alpha_composite(sh.filter(ImageFilter.GaussianBlur(6)))
     d = ImageDraw.Draw(img)
-    for i, ln in enumerate(lines): d.text((xpos(ln), y0 + i * size * lh), ln, font=f, fill=fill)
+    for i, ln in enumerate(lines):
+        if not hl: d.text((xpos(ln), y0 + i * size * lh), ln, font=f, fill=fill); continue
+        xx = xpos(ln); sp = d.textlength(" ", font=f)
+        for wd in ln.split(" "):
+            c = hlfill if re.sub(r"[^\w]", "", wd) in hl else fill
+            d.text((xx, y0 + i * size * lh), wd, font=f, fill=c); xx += d.textlength(wd, font=f) + sp
     return y0, y0 + Hh
 
 def kicker_at(img, text, x, y, fill, align, size):
@@ -59,11 +68,12 @@ def card(w, h, it, defaults, seed):
     align = "left" if layout == "sinistra" else "center"; x = int(w * 0.11) if align == "left" else w // 2
     size = it.get("size") or {"grande": 112 if tall else 96}.get(layout, 86 if tall else 72)
     if fname == "sans": size = int(size * 0.72)
+    if fname == "impact": size = int(size * 0.92)
     maxw = int(w * (0.74 if align == "left" else 0.8))
     # misura per la velatura
-    tmp = Image.new("RGBA", (w, h)); y0, y1 = block(tmp, it["text"], FONTS[fname], size, x, int(cy), maxw, fill, align, False)
+    tmp = Image.new("RGBA", (w, h)); y0, y1 = block(tmp, it["text"], FONTS[fname], size, x, int(cy), maxw, fill, align, False, hlfill=kfill)
     if not light and bgspec.get("concept") != "cielo": scrim(img, y0 - 120, y1 + 80, it.get("scrim", 0.42))
-    y0, y1 = block(img, it["text"], FONTS[fname], size, x, int(cy), maxw, fill, align, shadow=not light)
+    y0, y1 = block(img, it["text"], FONTS[fname], size, x, int(cy), maxw, fill, align, shadow=not light, hlfill=kfill)
     if it.get("number"): spaced(img, it["number"], SANS_B, 30, w // 2 if align == "center" else x + 40, int(y0 - 230), fill=kfill, track=6)
     if it.get("kicker"): kicker_at(img, it["kicker"], x, int(y0 - 140), kfill, align, 30 if tall else 28)
     if it.get("sub"):
