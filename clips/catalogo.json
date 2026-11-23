@@ -3142,5 +3142,113 @@
   "tono": "dark",
   "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
   "originale": "15208635_1920_1080_30fps.mp4"
+ },
+ {
+  "file": "clips/viale-alberi-autunno.mp4",
+  "poster": "clips/viale-alberi-autunno.jpg",
+  "dur": 6.8,
+  "soggetto": "viale pedonale tra alberi gialli e arancio d'autunno (breve)",
+  "ambientazione": "parco",
+  "palette": "oro e arancio",
+  "luce": "sole d'autunno",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
+  "originale": "15529521_2160_3840_60fps.mp4"
+ },
+ {
+  "file": "clips/positano-costiera.mp4",
+  "poster": "clips/positano-costiera.jpg",
+  "dur": 10.0,
+  "soggetto": "Positano e le montagne della Costiera Amalfitana da una terrazza",
+  "ambientazione": "Costiera Amalfitana",
+  "palette": "azzurro, pastello e verde",
+  "luce": "sole pieno",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
+  "originale": "15427925_2160_3840_60fps.mp4"
+ },
+ {
+  "file": "clips/cupola-dorata-raggio-luce.mp4",
+  "poster": "clips/cupola-dorata-raggio-luce.jpg",
+  "dur": 15.0,
+  "soggetto": "cupola dorata di una chiesa con un raggio di luce dalla lanterna (vista dal basso)",
+  "ambientazione": "interno di chiesa",
+  "palette": "oro e ocra",
+  "luce": "raggio di luce",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026; ritagliato in verticale; in basso parte di un'iscrizione latina della chiesa",
+  "originale": "15442541_3840_2160_30fps.mp4"
+ },
+ {
+  "file": "clips/san-pietro-tevere-tramonto.mp4",
+  "poster": "clips/san-pietro-tevere-tramonto.jpg",
+  "dur": 15.0,
+  "soggetto": "la cupola di San Pietro vista dal Tevere al tramonto",
+  "ambientazione": "Roma, lungotevere",
+  "palette": "lilla e oro",
+  "luce": "crepuscolo",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026; estratto 10-25 s",
+  "originale": "15445277_2160_3840_60fps.mp4"
+ },
+ {
+  "file": "clips/firenze-duomo-drone.mp4",
+  "poster": "clips/firenze-duomo-drone.jpg",
+  "dur": 13.1,
+  "soggetto": "cupola del Duomo di Firenze e i tetti della città visti dal drone",
+  "ambientazione": "Firenze",
+  "palette": "cotto e bianco",
+  "luce": "luce del mattino",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026; ritagliato in verticale",
+  "originale": "15470637_3840_2160_60fps.mp4"
+ },
+ {
+  "file": "clips/ecografia-scarpine-neonato.mp4",
+  "poster": "clips/ecografia-scarpine-neonato.jpg",
+  "dur": 11.3,
+  "soggetto": "ecografie, body e scarpine da neonato sul letto",
+  "ambientazione": "camera",
+  "palette": "beige e crema",
+  "luce": "luce morbida",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
+  "originale": "15372910_2160_3840_30fps.mp4"
+ },
+ {
+  "file": "clips/rosa-rossa-vetro-pioggia.mp4",
+  "poster": "clips/rosa-rossa-vetro-pioggia.jpg",
+  "dur": 14.8,
+  "soggetto": "rosa rossa dietro un vetro bagnato dalla pioggia",
+  "ambientazione": "finestra",
+  "palette": "rosso e rosa",
+  "luce": "luce diffusa",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026; ritagliato in 9:16",
+  "originale": "15401579_2160_3650_15fps.mp4"
+ },
+ {
+  "file": "clips/colosseo-roma.mp4",
+  "poster": "clips/colosseo-roma.jpg",
+  "dur": 7.0,
+  "soggetto": "interno del Colosseo con il cielo azzurro (breve)",
+  "ambientazione": "Roma",
+  "palette": "pietra e azzurro",
+  "luce": "sole di giorno",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
+  "originale": "15434237_2160_3840_30fps.mp4"
+ },
+ {
+  "file": "clips/fontana-di-trevi.mp4",
+  "poster": "clips/fontana-di-trevi.jpg",
+  "dur": 7.2,
+  "soggetto": "la Fontana di Trevi a Roma (breve)",
+  "ambientazione": "Roma",
+  "palette": "bianco travertino e turchese",
+  "luce": "sole di giorno",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
+  "originale": "15508013_1080_1920_30fps.mp4"
  }
 ]
