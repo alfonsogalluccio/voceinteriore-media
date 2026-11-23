@@ -80,7 +80,8 @@ def render(spec, out, music_dir, lib, tmp="/home/claude/rtmp"):
     # tempi delle scene agganciati ai beat
     cuts = [0.0]
     for c in spec["cuts"]:
-        cuts.append(min(beats, key=lambda b: abs(b - c)) if beats else c)
+        # con la voce narrante i tagli devono seguire la voce: "snap_beats": false li lascia dove sono
+        cuts.append(min(beats, key=lambda b: abs(b - c)) if beats and spec.get("snap_beats", True) else c)
     cuts.append(total)
     scenes = [Scene(s, cuts[i], cuts[i+1]) for i, s in enumerate(spec["scenes"])]
     bgspec = spec.get("bg", {"concept": "cielo", "palette": spec.get("palette", "alba")})
@@ -93,6 +94,13 @@ def render(spec, out, music_dir, lib, tmp="/home/claude/rtmp"):
     clip = None
     if "clip" in bgspec:
         cp = os.path.join(SCN.ROOT, bgspec["clip"])
+        # "slow": rallenta la clip (es. 1.5); "pingpong": true la fa scorrere avanti e indietro, così nei Reel
+        # lunghi (35-45 s) una clip da 12-15 s non "salta" quando ricomincia
+        if bgspec.get("slow") or bgspec.get("pingpong"):
+            k = bgspec.get("slow", 1.0); lp = f"{tmp}/clip_loop.mp4"
+            fc = f"[0:v]setpts={k}*PTS,split[a][b];[b]reverse[r];[a][r]concat=n=2:v=1[v]" if bgspec.get("pingpong") else f"[0:v]setpts={k}*PTS[v]"
+            subprocess.run(f'ffmpeg -v error -y -i "{cp}" -an -filter_complex "{fc}" -map "[v]" -c:v libx264 -crf 16 -preset veryfast "{lp}"', shell=True, check=True)
+            cp = lp
         # "grade": "bn" = divisa del registro FORTE: bianco e nero morbido, contrasto un po' più alto
         grade = ",hue=s=0.08,eq=contrast=1.15:brightness=-0.02" if bgspec.get("grade") == "bn" else ""
         clip = subprocess.Popen(f'ffmpeg -v error -stream_loop -1 -i "{cp}" -vf "scale={W}:{H},fps={FPS}{grade}" -f rawvideo -pix_fmt rgb24 -',

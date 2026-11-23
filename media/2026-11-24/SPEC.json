@@ -1,0 +1,144 @@
+{
+ "date": "2026-11-24",
+ "seed": 24,
+ "carousel_style": {
+  "bg": {
+   "concept": "bosco",
+   "variant": 1
+  },
+  "layout": "centro",
+  "font": "serif_i"
+ },
+ "carousel": [
+  {
+   "kicker": "Ispirato a Luca 21,5-11",
+   "text": "«Signore, sta crollando tutto.»\n«Non avere paura.\nIo resto.»",
+   "numbered": false,
+   "note": "Scorri"
+  },
+  {
+   "bg": {
+    "concept": "nero",
+    "variant": 0
+   },
+   "layout": "centro",
+   "font": "serif",
+   "text": "Possono cadere anche\nle pietre più belle.\nChi si appoggia a Dio\nresta in piedi.",
+   "numbered": false
+  },
+  {
+   "kicker": "Gesù ti dice",
+   "text": "«Quando sentirete parlare di guerre e di rivoluzioni, non vi terrorizzate»",
+   "sub": "Luca 21,9",
+   "numbered": false,
+   "note": "Salvalo per il giorno in cui qualcosa crolla"
+  }
+ ],
+ "stories": [
+  {
+   "kicker": "Il Vangelo di oggi",
+   "text": "Anche se qualcosa crolla,\nnon avere paura.\nDio resta.",
+   "sub": "Luca 21,9",
+   "bg": {
+    "concept": "montagne",
+    "variant": 1
+   },
+   "layout": "basso",
+   "font": "serif"
+  },
+  {
+   "kicker": "Domanda della sera",
+   "text": "Paura o fede:\ncosa ha vinto\noggi in te?",
+   "note": "Rispondi con una parola",
+   "bg": {
+    "concept": "pioggia",
+    "variant": 2
+   },
+   "layout": "grande",
+   "font": "sans"
+  }
+ ],
+ "reel": {
+  "dur": 36,
+  "music": "proprio-the-light-that-remains.mp3",
+  "music_vol_with_voice": 0.2,
+  "voice": "/home/claude/work/voce.mp3",
+  "voice_delay": 0.6,
+  "snap_beats": false,
+  "particles": false,
+  "bg": {
+   "clip": "clips/uomo-cappuccio-lago-nuvole.mp4",
+   "grade": "bn",
+   "darken": 0.3,
+   "slow": 1.4,
+   "pingpong": true
+  },
+  "cuts": [
+   3.75,
+   6.19,
+   8.57,
+   10.31,
+   13.01,
+   14.51,
+   19.51,
+   22.33,
+   25.11,
+   27.25,
+   30.57
+  ],
+  "scenes": [
+   {
+    "style": "hook",
+    "font": "impact",
+    "text": "*PROVERBI 24,16*",
+    "instant": true,
+    "cy": 900
+   },
+   {
+    "style": "caption",
+    "text": "Se il giusto cade sette volte,"
+   },
+   {
+    "style": "caption",
+    "text": "egli si rialza."
+   },
+   {
+    "style": "caption",
+    "text": "Non dice che non cadrai."
+   },
+   {
+    "style": "caption",
+    "text": "Dice che ti rialzerai."
+   },
+   {
+    "style": "caption",
+    "text": "Sono caduto anch'io."
+   },
+   {
+    "style": "caption",
+    "text": "Nel lavoro.\nNelle parole sbagliate.\nNella paura di non farcela."
+   },
+   {
+    "style": "caption",
+    "text": "E ogni volta che ero a terra,\nDio era lì."
+   },
+   {
+    "style": "caption",
+    "text": "Più vicino di quanto pensassi."
+   },
+   {
+    "style": "caption",
+    "text": "Oggi non conto le cadute."
+   },
+   {
+    "style": "caption",
+    "text": "Conto le volte che mi ha rialzato."
+   },
+   {
+    "style": "caption",
+    "text": "Alzati.\nDio non ha finito con te.",
+    "size": 72
+   }
+  ]
+ }
+}

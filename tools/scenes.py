@@ -283,6 +283,14 @@ def sentiero(w, h, rng, v):
     return _img(arr), dict(soggetto="sentiero verso la luce", ambientazione="campagna", palette=["mattino", "tramonto", "lilla"][v % 3],
                            luce="luce in fondo al cammino", prospettiva="punto di fuga centrale", composizione="linee convergenti", tono="dark")
 
+def nero(w, h, rng, v):
+    """Fondo nero editoriale (slide 2 dei caroselli in 3 slide, STRATEGIA sez. 11): una sola frase serif bianca."""
+    base = [(10, 10, 10), (14, 12, 10), (8, 10, 14)][v % 3]
+    col = np.broadcast_to(np.array(base, np.float32), (h, w, 3)).copy()
+    _glow(col, 0.5, 0.47, 0.55, (40, 36, 32), 0.35); _vignette(col, 0.5); _grain(col, rng, 2.5)
+    return _img(col), dict(soggetto="fondo nero", ambientazione="tipografico", palette=["nero", "nero caldo", "nero blu"][v % 3],
+                           luce="buio con lieve alone", prospettiva="piatta", composizione="solo tipografia", tono="dark")
+
 def cielo(w, h, rng, v, palette="alba"):
     import brand
     pal = palette if palette in brand.PALETTES else ["alba", "notte", "oro", "mare", "viola"][v % 5]
@@ -291,7 +299,7 @@ def cielo(w, h, rng, v, palette="alba"):
 
 CONCEPTS = dict(candela=candela, finestra=finestra, montagne=montagne, mare=mare, bosco=bosco, stelle=stelle, citta=citta,
                 pioggia=pioggia, acquerello=acquerello, carta=carta, colore=colore, lago=lago, grano=grano, croce=croce,
-                sentiero=sentiero, cielo=cielo)
+                sentiero=sentiero, nero=nero, cielo=cielo)
 
 def photo(path, w, h, darken=0.45):
     """Foto vera dalla cartella backgrounds/: ritaglio a riempimento + velatura per la leggibilità."""
