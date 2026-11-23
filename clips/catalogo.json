@@ -3430,5 +3430,37 @@
   "tono": "light",
   "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026; estratto 5-20 s",
   "originale": "20488159-hd_1080_1920_30fps.mp4"
+ },
+ {
+  "file": "clips/uomo-pxb118768.mp4",
+  "poster": "clips/uomo-pxb118768.jpg",
+  "dur": 15,
+  "soggetto": "(da verificare) waterfall, falls, behind, water, wet, rocks",
+  "ambientazione": "da verificare",
+  "palette": "da verificare",
+  "luce": "da verificare",
+  "tono": "dark",
+  "fonte": "Pixabay (Content License, uso libero) – autore: Trek_Jason – scaricato automaticamente il 23/11/2026 (ricerca: man hoodie from behind)",
+  "originale": "118768-715736061_large.mp4",
+  "pexels_id": "pxb118768",
+  "pexels_url": "https://pixabay.com/videos/id-118768/",
+  "da_verificare": true,
+  "ritaglio_centrale": true
+ },
+ {
+  "file": "clips/uomo-pxb33014.mp4",
+  "poster": "clips/uomo-pxb33014.jpg",
+  "dur": 15,
+  "soggetto": "(da verificare) port, yachts, water, sea, boat, marina, ship, regatta, sailboat, reflection, ships, sailing, summer, travel, drone, with drone, from above",
+  "ambientazione": "da verificare",
+  "palette": "da verificare",
+  "luce": "da verificare",
+  "tono": "dark",
+  "fonte": "Pixabay (Content License, uso libero) – autore: Airvideopl – scaricato automaticamente il 23/11/2026 (ricerca: man hoodie from behind)",
+  "originale": "33014-395456435_large.mp4",
+  "pexels_id": "pxb33014",
+  "pexels_url": "https://pixabay.com/videos/id-33014/",
+  "da_verificare": true,
+  "ritaglio_centrale": true
  }
 ]
