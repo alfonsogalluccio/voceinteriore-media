@@ -2542,5 +2542,17 @@
   "tono": "light",
   "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 19/11/2026",
   "originale": "fa3af009-12513942_2160_3840_30fps.mp4"
+ },
+ {
+  "file": "clips/colloquio-lavoro-ufficio.mp4",
+  "poster": "clips/colloquio-lavoro-ufficio.jpg",
+  "dur": 15.0,
+  "soggetto": "uomo che sostiene un colloquio di lavoro davanti a chi lo intervista",
+  "ambientazione": "ufficio con vetrate",
+  "palette": "grigio e marrone",
+  "luce": "luce naturale dalla finestra",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026; ritagliato per togliere una scritta sul vetro",
+  "originale": "5439075-uhd_2160_3840_25fps.mp4"
  }
 ]
