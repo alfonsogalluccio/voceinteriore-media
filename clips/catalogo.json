@@ -2578,5 +2578,29 @@
   "tono": "light",
   "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026; nessun logo visibile",
   "originale": "7657447-hd_1080_1920_25fps.mp4"
+ },
+ {
+  "file": "clips/pompieri-pioggia-citta.mp4",
+  "poster": "clips/pompieri-pioggia-citta.jpg",
+  "dur": 15.0,
+  "soggetto": "camion dei vigili del fuoco che escono in città sotto la pioggia battente (vista dall'alto)",
+  "ambientazione": "incrocio sotto un viadotto",
+  "palette": "grigio, rosso e giallo",
+  "luce": "pioggia e luci d'emergenza",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
+  "originale": "9838520-hd_1080_1920_30fps.mp4"
+ },
+ {
+  "file": "clips/uomo-cappuccio-lago-nuvole.mp4",
+  "poster": "clips/uomo-cappuccio-lago-nuvole.jpg",
+  "dur": 12.2,
+  "soggetto": "uomo con il cappuccio seduto su un tronco davanti al lago, di spalle, sotto nuvole pesanti",
+  "ambientazione": "riva di sassi di un lago tra le montagne",
+  "palette": "verde oliva e grigio",
+  "luce": "cielo coperto",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026; ritagliato in verticale da un video orizzontale (qualità un po' più morbida)",
+  "originale": "11439817-hd_1920_1080_25fps.mp4"
  }
 ]
