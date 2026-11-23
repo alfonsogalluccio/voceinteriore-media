@@ -2554,5 +2554,17 @@
   "tono": "light",
   "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026; ritagliato per togliere una scritta sul vetro",
   "originale": "5439075-uhd_2160_3840_25fps.mp4"
+ },
+ {
+  "file": "clips/donna-barca-parete-roccia.mp4",
+  "poster": "clips/donna-barca-parete-roccia.jpg",
+  "dur": 15.0,
+  "soggetto": "donna sola su una barca che guarda in alto sotto un'enorme parete di roccia (la camera si allontana)",
+  "ambientazione": "lago in una cava tra pareti di roccia",
+  "palette": "grigio pietra e verde scuro",
+  "luce": "cielo coperto",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026; estratto 39-54 s",
+  "originale": "6328343-uhd_2160_4096_25fps.mp4"
  }
 ]
