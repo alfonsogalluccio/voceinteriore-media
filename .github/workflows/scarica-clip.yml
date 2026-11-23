@@ -1,4 +1,4 @@
-name: Scarica clip da Pexels
+name: Scarica clip (Pixabay o Pexels)
 # Parte quando qualcuno (o l'attività serale) scrive richieste in clips/richieste.json, oppure a mano da "Actions".
 on:
   push:
@@ -22,6 +22,7 @@ jobs:
       - name: Scarica e prepara le clip
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
         run: python3 tools/pexels_scarica.py
       - name: Salva nel repository
         run: |
