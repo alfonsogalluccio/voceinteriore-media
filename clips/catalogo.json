@@ -2782,5 +2782,101 @@
   "tono": "light",
   "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
   "originale": "12881862_2160_3840_60fps.mp4"
+ },
+ {
+  "file": "clips/uomo-finestra-casa-pensieri.mp4",
+  "poster": "clips/uomo-finestra-casa-pensieri.jpg",
+  "dur": 15.0,
+  "soggetto": "uomo in piedi alla finestra di casa che guarda fuori, pensieroso",
+  "ambientazione": "soggiorno",
+  "palette": "ocra e marrone",
+  "luce": "luce calda dalla finestra",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026; estratto 5-20 s",
+  "originale": "13148268_2160_3840_27fps.mp4"
+ },
+ {
+  "file": "clips/erba-secca-luna-tramonto.mp4",
+  "poster": "clips/erba-secca-luna-tramonto.jpg",
+  "dur": 4.2,
+  "soggetto": "erba secca mossa dal vento sotto una falce di luna al tramonto (breve)",
+  "ambientazione": "campo",
+  "palette": "oro e azzurro",
+  "luce": "crepuscolo",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
+  "originale": "13086150-hd_1080_1920_30fps.mp4"
+ },
+ {
+  "file": "clips/uomo-cammina-nebbia-campo.mp4",
+  "poster": "clips/uomo-cammina-nebbia-campo.jpg",
+  "dur": 15.0,
+  "soggetto": "uomo che cammina da solo verso la camera in un campo avvolto dalla nebbia",
+  "ambientazione": "campo con alberi spogli",
+  "palette": "bianco e grigio",
+  "luce": "nebbia fitta",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026; estratto 3-18 s",
+  "originale": "13191444_1080_1920_30fps.mp4"
+ },
+ {
+  "file": "clips/uomo-corre-lungomare.mp4",
+  "poster": "clips/uomo-corre-lungomare.jpg",
+  "dur": 12.0,
+  "soggetto": "uomo che corre sul lungomare (a torso nudo, con altre persone sullo sfondo)",
+  "ambientazione": "lungomare",
+  "palette": "azzurro e grigio",
+  "luce": "luce di giorno",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026; estratto 21-33 s, scelto per evitare scritte",
+  "originale": "13372537_1080_1920_30fps.mp4"
+ },
+ {
+  "file": "clips/uomo-albero-tramonto-campo.mp4",
+  "poster": "clips/uomo-albero-tramonto-campo.jpg",
+  "dur": 15.0,
+  "soggetto": "uomo solo in piedi davanti a un albero spoglio, guarda il tramonto",
+  "ambientazione": "campo aperto",
+  "palette": "rosa, oro e verde",
+  "luce": "tramonto",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026; estratto 12-27 s",
+  "originale": "13377739_1080_1920_30fps.mp4"
+ },
+ {
+  "file": "clips/strada-costiera-drone-tramonto.mp4",
+  "poster": "clips/strada-costiera-drone-tramonto.jpg",
+  "dur": 15.0,
+  "soggetto": "strada che corre sulla costa tra bosco e mare vista dal drone",
+  "ambientazione": "costa con scogliera",
+  "palette": "verde, turchese e rosa",
+  "luce": "tramonto",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
+  "originale": "13382117_1080_1920_30fps.mp4"
+ },
+ {
+  "file": "clips/viale-cipressi-toscana.mp4",
+  "poster": "clips/viale-cipressi-toscana.jpg",
+  "dur": 7.0,
+  "soggetto": "viale sterrato tra i cipressi verso una casa di campagna",
+  "ambientazione": "campagna toscana",
+  "palette": "verde e azzurro",
+  "luce": "sole pieno",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
+  "originale": "13454243_2160_3840_60fps.mp4"
+ },
+ {
+  "file": "clips/fori-imperiali-roma-tramonto.mp4",
+  "poster": "clips/fori-imperiali-roma-tramonto.jpg",
+  "dur": 15.0,
+  "soggetto": "Fori Imperiali di Roma con il Vittoriano sullo sfondo",
+  "ambientazione": "Roma",
+  "palette": "oro, verde e cielo chiaro",
+  "luce": "luce del tramonto",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026; estratto 5-20 s",
+  "originale": "13517869_1080_1920_60fps.mp4"
  }
 ]

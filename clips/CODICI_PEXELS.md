@@ -1,6 +1,6 @@
 # Video già presenti nella libreria (codice Pexels)
 
-Aggiornato al 23/11/2026 – 232 video. Prima di caricare un video, cerca qui il numero iniziale del file (es. 6328343). Se c'è, non serve mandarlo. I video da Pinterest o Pixabay non hanno codice Pexels (—).
+Aggiornato al 23/11/2026 – 240 video. Prima di caricare un video, cerca qui il numero iniziale del file (es. 6328343). Se c'è, non serve mandarlo. I video da Pinterest o Pixabay non hanno codice Pexels (—).
 
 | Codice Pexels | Nome nella libreria | Soggetto |
 |---|---|---|
@@ -180,6 +180,14 @@ Aggiornato al 23/11/2026 – 232 video. Prima di caricare un video, cerca qui il
 | 13034773 | luna-nuvole-viola | falce di luna tra nuvole |
 | 13038441 | autobus-persone-controluce | persone in piedi su un autobus in controluce |
 | 13075911 | tramonto-mare-sassi | sole che tramonta sul mare con onde sulla spiaggia di sassi |
+| 13086150 | erba-secca-luna-tramonto | erba secca mossa dal vento sotto una falce di luna al tramonto (breve) |
+| 13148268 | uomo-finestra-casa-pensieri | uomo in piedi alla finestra di casa che guarda fuori, pensieroso |
+| 13191444 | uomo-cammina-nebbia-campo | uomo che cammina da solo verso la camera in un campo avvolto dalla nebbia |
+| 13372537 | uomo-corre-lungomare | uomo che corre sul lungomare (a torso nudo, con altre persone sullo sfondo) |
+| 13377739 | uomo-albero-tramonto-campo | uomo solo in piedi davanti a un albero spoglio, guarda il tramonto |
+| 13382117 | strada-costiera-drone-tramonto | strada che corre sulla costa tra bosco e mare vista dal drone |
+| 13454243 | viale-cipressi-toscana | viale sterrato tra i cipressi verso una casa di campagna |
+| 13517869 | fori-imperiali-roma-tramonto | Fori Imperiali di Roma con il Vittoriano sullo sfondo |
 | 13623899 | nuvola-rosa-luna | nuvola rosa e luna |
 | 14043578 | lago-montagne-molo | lago tra le montagne con molo |
 | 14330632 | foglie-sole | foglie con il sole dietro |
@@ -238,4 +246,4 @@ Aggiornato al 23/11/2026 – 232 video. Prima di caricare un video, cerca qui il
 | — | viale-notte-lampioni | viale alberato con lampioni e foglie |
 
 ## Scartati (non rimandarli)
-4896507 (logo Apple) · 7083630 (pub, alcol) · 7394163 (cuore con scritta in inglese) · 7597168 (lista in inglese leggibile) · 9756317 (coppia che balla in barca) · 10495025 (spiaggia in costume) · 11906866 (via con pubblicità) · 11912985, 11912988 (Carabinieri, scritte) · 12571082 (soccorritori con loghi di associazioni) · 12164762 (libro con testo turco leggibile) · 12390852 (bandiera della Colombia) · 12605513 (scia d'aereo, troppo simile a un video già presente) · 13062865 (tazze con logo di una catena di caffè) · 13062861, 12694168, 13001524, 12986236 (caffè/colazione e girasoli: ne abbiamo già molti)
+4896507 (logo Apple) · 7083630 (pub, alcol) · 7394163 (cuore con scritta in inglese) · 7597168 (lista in inglese leggibile) · 9756317 (coppia che balla in barca) · 10495025 (spiaggia in costume) · 11906866 (via con pubblicità) · 11912985, 11912988 (Carabinieri, scritte) · 12571082 (soccorritori con loghi di associazioni) · 12164762 (libro con testo turco leggibile) · 12390852 (bandiera della Colombia) · 12605513 (scia d'aereo, troppo simile a un video già presente) · 13062865 (tazze con logo di una catena di caffè) · 13062861, 12694168, 13001524, 12986236 (caffè/colazione e girasoli: ne abbiamo già molti) · 13227637, 13278946 (città distrutta dal terremoto: dolore reale) · 13446869 (traffico con targhe e scritte) · 13139547 (coppia, scritta sulla maglietta) · 13279183 (macchina del caffè con marchio) · 13329293 (scia d'aereo) · 13372516 (gara di corsa con loghi degli sponsor) · 13550135, 13550157 (portatile e caffè: ne abbiamo già)
