@@ -265,5 +265,27 @@ Ogni lunedì confrontare FORTE e CUORE per visualizzazioni, invii o condivisioni
 7. **Hashtag: 5 fissi e coerenti**, sempre gli stessi più 1 a tema (per esempio #fedecristiana #preghiera #vangelodelgiorno #dio #gesù + 1). Basta con le liste lunghe.
 8. **Commenti da favorire.** Frasi a cui si risponde con una parola o un versetto ("Scrivi PRONTO", "Rispondi con il tuo versetto della battaglia"). Rispondere alle testimonianze personali (azione del proprietario): sotto il suo post migliore sono la cosa più apprezzata.
 
+### Divisa FORTE e protagonista anonimo (decisione del proprietario, 23/11/2026)
+Il proprietario **non compare nei video**. La riconoscibilità che @fearnotmentality ottiene con il suo fondatore la otteniamo con un **protagonista anonimo** e una **"divisa" visiva fissa**, solo per i Reel del registro FORTE. Il registro CUORE resta vario e luminoso come oggi.
+
+**La divisa (sempre uguale, così si riconosce):**
+- Fondo: una sola clip con un uomo **senza volto visibile** (di spalle, in silhouette, incappucciato o a mani giunte). Con `"grade": "bn"` va in bianco e nero morbido.
+- Niente particelle di luce (`"particles": false`).
+- Primo fotogramma: solo il riferimento biblico in `impact`, oro, per esempio `*SALMO 23,4*`. È l'unico oro del video.
+- Poi sottotitoli piccoli e bianchi al centro-basso (`"style": "caption"`) che seguono la voce, una frase per scena.
+- Voce ufficiale ElevenLabs in prima persona: versetto CEI detto per intero, poi 3-5 frasi semplici e concrete sulla vita italiana (lavoro, ospedale, figli, solitudine).
+- Ultima scena sempre: «Alzati. Dio non ha finito con te.»
+- Durata 35-45 s, un Reel FORTE con la divisa 3 volte a settimana.
+
+**Perché non contraddice la sezione 1 ("mai ripetere gli sfondi"):** la clip cambia ogni volta, mentre restano fissi trattamento, protagonista e tipografia. Valgono sempre le regole delle 3 settimane per la stessa clip e degli 8 sfondi.
+
+**Clip adatte già in catalogo** (uomo senza volto in primo piano):
+uomo-cappuccio-lago-nuvole · persona-riva-torrente-montagna · persona-strada-notte · uomo-solo-campo-temporale · uomo-collina-tramonto-silhouette · uomo-molo-faro-nebbia · uomo-cammina-pontile-nebbia · uomo-casa-diroccata-albero · uomo-albero-solitario-alba · uomo-albero-tramonto-campo · uomo-pontile-alba · uomo-cammina-verso-sole · uomo-vetta-braccia-alba · uomo-terrazza-mare-nuvole · ragazzo-mani-giunte · uomo-prega-chiesa-luce · persona-albero-bianconero.
+Bastano per circa 5-6 settimane: chiedere al proprietario nel report altre clip Pexels di "uomo di spalle con felpa scura o cappuccio", in città, al lavoro, in chiesa e sotto la pioggia.
+
+**Caroselli FORTE con la stessa divisa:** slide 1 con un fotogramma B/N di una di queste clip e la frase-hook; slide 2 nera con una sola frase serif bianca; slide 3 con versetto e firma.
+
+**Bozze pronte:** `programmi/BOZZE_FORTE.md` (Proverbi 24,16 · Salmo 23,4 · Romani 8,31).
+
 ### Come si integra con il piano 24-30/11 (sezione 10)
 Le decisioni del report restano valide. L'esperimento "affermazione forte nel primo fotogramma" si fa nel registro FORTE con font `impact`. I format nuovi della rotazione ("Se stai leggendo questo…", "Parabola in 15 secondi", "Preghiera per…") si possono girare in entrambi i registri. Per le ricorrenze delicate (25/11, violenza sulle donne) si usa il registro CUORE (dignità e protezione) e mai toni da battaglia.

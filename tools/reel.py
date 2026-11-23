@@ -28,8 +28,10 @@ class Scene:
     def __init__(self, s, t0, t1):
         self.t0, self.t1 = t0, t1; self.s = s
         style = s.get("style", "body")
-        size = {"hook": 104, "body": 88, "verse": 84, "cta": 96}[style]
+        size = {"hook": 104, "body": 88, "verse": 84, "cta": 96, "caption": 58}[style]
         fp = SERIF_I if style in ("verse", "body", "hook") else SERIF
+        if style == "caption":   # sottotitolo stile "divisa FORTE": piccolo, bianco, centro-basso
+            fp = SANS_B; s = dict(s); s.setdefault("cy", 1380)
         text = s["text"]
         if s.get("font") == "impact":   # registro "forte": maiuscolo d'impatto, *parole* in oro
             fp = SANS_X; text = text.upper(); size = int(size * 0.8)
@@ -37,6 +39,7 @@ class Scene:
         text = text.replace("*", "")
         self.f, self.words, self.ybot = layout_words(text, fp, s.get("size", size), 900, W/2, s.get("cy", 880))
         self.reveal = s.get("reveal", min(1.4, 0.18 * len(self.words)))
+        self.s = s
     def draw(self, t):
         layer = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(layer)
         lt = t - self.t0; out = 1 - ease((t - (self.t1 - 0.35)) / 0.35) if t > self.t1 - 0.35 else 1
@@ -90,7 +93,9 @@ def render(spec, out, music_dir, lib, tmp="/home/claude/rtmp"):
     clip = None
     if "clip" in bgspec:
         cp = os.path.join(SCN.ROOT, bgspec["clip"])
-        clip = subprocess.Popen(f'ffmpeg -v error -stream_loop -1 -i "{cp}" -vf "scale={W}:{H},fps={FPS}" -f rawvideo -pix_fmt rgb24 -',
+        # "grade": "bn" = divisa del registro FORTE: bianco e nero morbido, contrasto un po' più alto
+        grade = ",hue=s=0.08,eq=contrast=1.15:brightness=-0.02" if bgspec.get("grade") == "bn" else ""
+        clip = subprocess.Popen(f'ffmpeg -v error -stream_loop -1 -i "{cp}" -vf "scale={W}:{H},fps={FPS}{grade}" -f rawvideo -pix_fmt rgb24 -',
                                 shell=True, stdout=subprocess.PIPE, stdin=subprocess.DEVNULL)
         dk = bgspec.get("darken", 0.38)
     foot = Image.new("RGBA", (W, H), (0, 0, 0, 0)); ornament(foot, W // 2, H - 252, half=40, fill=CREAM); spaced(foot, "VOCEINTERIORE2025", SANS_B, 26, W // 2, H - 230, fill=CREAM, track=7)
@@ -113,12 +118,13 @@ def render(spec, out, music_dir, lib, tmp="/home/claude/rtmp"):
         else:
             frame = bg.crop((int(cx - cw/2), int(cy - ch/2), int(cx + cw/2), int(cy + ch/2))).resize((W, H), Image.BILINEAR).convert("RGBA")
         # particelle di luce che salgono
-        lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
-        ys = (P["y"] + P["vy"] * t) % H; xs = (P["x"] + P["vx"] * t) % W
-        for x, y, r, ph in zip(xs, ys, P["r"], P["ph"]):
-            a = int((90 + 70 * np.sin(t * 1.5 + ph)) * (0.4 + 0.6 * y / H) * (1 + 0.6 * pulse))
-            d.ellipse((x - r, y - r, x + r, y + r), fill=(255, 230, 180, min(255, a)))
-        frame.alpha_composite(lay.filter(ImageFilter.GaussianBlur(3)))
+        if spec.get("particles", True):   # nel registro FORTE si spengono ("particles": false)
+            lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+            ys = (P["y"] + P["vy"] * t) % H; xs = (P["x"] + P["vx"] * t) % W
+            for x, y, r, ph in zip(xs, ys, P["r"], P["ph"]):
+                a = int((90 + 70 * np.sin(t * 1.5 + ph)) * (0.4 + 0.6 * y / H) * (1 + 0.6 * pulse))
+                d.ellipse((x - r, y - r, x + r, y + r), fill=(255, 230, 180, min(255, a)))
+            frame.alpha_composite(lay.filter(ImageFilter.GaussianBlur(3)))
         for sc in scenes:
             if sc.t0 <= t < sc.t1: frame.alpha_composite(sc.draw(t))
         frame.alpha_composite(foot)
