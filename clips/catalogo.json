@@ -3310,5 +3310,77 @@
   "tono": "light",
   "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
   "originale": "15701245_1080_1920_60fps.mp4"
+ },
+ {
+  "file": "clips/impronte-sabbia-riva.mp4",
+  "poster": "clips/impronte-sabbia-riva.jpg",
+  "dur": 15.0,
+  "soggetto": "impronte di piedi nudi sulla sabbia bagnata e una persona che cammina avanti",
+  "ambientazione": "riva del mare",
+  "palette": "sabbia e argento",
+  "luce": "luce del mattino",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026; estratto 0-15 s",
+  "originale": "18129073-uhd_2160_3840_24fps.mp4"
+ },
+ {
+  "file": "clips/neonato-si-stiracchia.mp4",
+  "poster": "clips/neonato-si-stiracchia.jpg",
+  "dur": 15.0,
+  "soggetto": "neonato che dorme e si stiracchia con le braccia sopra la testa",
+  "ambientazione": "culla",
+  "palette": "bianco e colori tenui",
+  "luce": "luce morbida",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026; estratto 5-20 s",
+  "originale": "18130611-uhd_2160_3840_30fps.mp4"
+ },
+ {
+  "file": "clips/persone-pregano-mani-alzate.mp4",
+  "poster": "clips/persone-pregano-mani-alzate.jpg",
+  "dur": 15.0,
+  "soggetto": "famiglie e persone che pregano e lodano con le mani alzate durante una celebrazione",
+  "ambientazione": "chiesa o assemblea",
+  "palette": "blu e colori caldi",
+  "luce": "luci di scena",
+  "tono": "dark",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026; estratto 2-17 s",
+  "originale": "16229180-uhd_2160_3840_60fps.mp4"
+ },
+ {
+  "file": "clips/uomo-cammina-pontile-nebbia.mp4",
+  "poster": "clips/uomo-cammina-pontile-nebbia.jpg",
+  "dur": 10.6,
+  "soggetto": "uomo che cammina scalzo fino alla fine di un pontile nella nebbia",
+  "ambientazione": "lago nella nebbia",
+  "palette": "grigio",
+  "luce": "nebbia",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026; ritagliato in 9:16",
+  "originale": "17741058-uhd_1440_2476_30fps.mp4"
+ },
+ {
+  "file": "clips/viale-alberi-nebbia-alba.mp4",
+  "poster": "clips/viale-alberi-nebbia-alba.jpg",
+  "dur": 8.4,
+  "soggetto": "lungo viale tra alberi d'autunno che sparisce nella nebbia all'alba, una persona in lontananza",
+  "ambientazione": "viale alberato",
+  "palette": "oro e grigio",
+  "luce": "alba nella nebbia",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
+  "originale": "16738513_2160_3840_25fps.mp4"
+ },
+ {
+  "file": "clips/muratore-cantiere-mattoni.mp4",
+  "poster": "clips/muratore-cantiere-mattoni.jpg",
+  "dur": 11.8,
+  "soggetto": "muratore al lavoro tra muri di mattoni in costruzione",
+  "ambientazione": "cantiere",
+  "palette": "rosso mattone e azzurro",
+  "luce": "sole pieno",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
+  "originale": "16752354_2160_3840_30fps.mp4"
  }
 ]
