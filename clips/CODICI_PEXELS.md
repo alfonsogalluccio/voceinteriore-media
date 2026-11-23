@@ -1,6 +1,6 @@
 # Video già presenti nella libreria (codice Pexels)
 
-Aggiornato al 23/11/2026 – 250 video. Prima di caricare un video, cerca qui il numero iniziale del file (es. 6328343). Se c'è, non serve mandarlo. I video da Pinterest o Pixabay non hanno codice Pexels (—).
+Aggiornato al 23/11/2026 – 258 video. Prima di caricare un video, cerca qui il numero iniziale del file (es. 6328343). Se c'è, non serve mandarlo. I video da Pinterest o Pixabay non hanno codice Pexels (—).
 
 | Codice Pexels | Nome nella libreria | Soggetto |
 |---|---|---|
@@ -200,8 +200,16 @@ Aggiornato al 23/11/2026 – 250 video. Prima di caricare un video, cerca qui il
 | 14241281 | uomo-casa-diroccata-albero | uomo di spalle davanti a una vecchia casa diroccata e a un albero |
 | 14259282 | uomo-pontile-alba | uomo in piedi in fondo a un pontile che guarda il mare all'alba |
 | 14293124 | uomo-trazioni-parco | uomo che fa trazioni alla sbarra in un parco all'aperto |
+| 14293826 | fiori-bianchi-controluce-tramonto | fiori bianchi di campo in controluce al tramonto |
+| 14301082 | bambina-abbraccia-pancione-mamma | bambina che abbraccia il pancione della mamma incinta, con il papà accanto |
 | 14330632 | foglie-sole | foglie con il sole dietro |
+| 14388853 | sentiero-binari-tramonto | sentiero accanto a vecchi binari sotto un cielo infuocato |
+| 14410062 | persona-corre-valle-montagna | persona che corre su per una valle di montagna lungo un ruscello (drone che la segue) |
+| 14422166 | candele-votive-chiesa | mano che accende una candela tra tante candele votive in chiesa |
+| 14464709 | bambini-mano-albero-autunno | fratellino e sorellina che si tengono per mano attorno a un tronco tra le foglie d'autunno |
+| 14501575 | riflessi-oro-acqua | riflessi dorati del sole sull'acqua scura (ottimo sfondo per il testo) |
 | 14545383 | tramonto-citta | tramonto drammatico sui tetti |
+| 14569971 | scatola-foto-ricordi | scatola di vecchie fotografie aperta sul tavolo |
 | 14907172 | mani-foglie-autunno | mani che tengono foglie d'autunno |
 | 27919650 | soccorritrice-visita-casa | soccorritrice che ascolta il cuore di una ragazza |
 | 35939499 | dune-mare-drone | dune d'erba verso il mare viste dall'alto |
@@ -256,4 +264,4 @@ Aggiornato al 23/11/2026 – 250 video. Prima di caricare un video, cerca qui il
 | — | viale-notte-lampioni | viale alberato con lampioni e foglie |
 
 ## Scartati (non rimandarli)
-4896507 (logo Apple) · 7083630 (pub, alcol) · 7394163 (cuore con scritta in inglese) · 7597168 (lista in inglese leggibile) · 9756317 (coppia che balla in barca) · 10495025 (spiaggia in costume) · 11906866 (via con pubblicità) · 11912985, 11912988 (Carabinieri, scritte) · 12571082 (soccorritori con loghi di associazioni) · 12164762 (libro con testo turco leggibile) · 12390852 (bandiera della Colombia) · 12605513 (scia d'aereo, troppo simile a un video già presente) · 13062865 (tazze con logo di una catena di caffè) · 13062861, 12694168, 13001524, 12986236 (caffè/colazione e girasoli: ne abbiamo già molti) · 13227637, 13278946 (città distrutta dal terremoto: dolore reale) · 13446869 (traffico con targhe e scritte) · 13139547 (coppia, scritta sulla maglietta) · 13279183 (macchina del caffè con marchio) · 13329293 (scia d'aereo) · 13372516 (gara di corsa con loghi degli sponsor) · 13550135, 13550157 (portatile e caffè: ne abbiamo già) · 13982570, 14267963 (tramonti sul mare: ne abbiamo molti) · 13939996, 13955919 (mongolfiere con scritte) · 14039595 (colline verdi: ne abbiamo) · 14074401 (girasoli: già presenti) · 14218774 (tablet con grafici)
+4896507 (logo Apple) · 7083630 (pub, alcol) · 7394163 (cuore con scritta in inglese) · 7597168 (lista in inglese leggibile) · 9756317 (coppia che balla in barca) · 10495025 (spiaggia in costume) · 11906866 (via con pubblicità) · 11912985, 11912988 (Carabinieri, scritte) · 12571082 (soccorritori con loghi di associazioni) · 12164762 (libro con testo turco leggibile) · 12390852 (bandiera della Colombia) · 12605513 (scia d'aereo, troppo simile a un video già presente) · 13062865 (tazze con logo di una catena di caffè) · 13062861, 12694168, 13001524, 12986236 (caffè/colazione e girasoli: ne abbiamo già molti) · 13227637, 13278946 (città distrutta dal terremoto: dolore reale) · 13446869 (traffico con targhe e scritte) · 13139547 (coppia, scritta sulla maglietta) · 13279183 (macchina del caffè con marchio) · 13329293 (scia d'aereo) · 13372516 (gara di corsa con loghi degli sponsor) · 13550135, 13550157 (portatile e caffè: ne abbiamo già) · 13982570, 14267963 (tramonti sul mare: ne abbiamo molti) · 13939996, 13955919 (mongolfiere con scritte) · 14039595 (colline verdi: ne abbiamo) · 14074401 (girasoli: già presenti) · 14218774 (tablet con grafici) · 14476088, 14666409 (mare dall'alto: ne abbiamo) · 14681001 (ballerina di flamenco) · 14703267 (ufficio) · 14297385 (spighe, simile ad altri) · 14309437 (onde dall'alto) · 14369716 (fiore giallo) · 14519774 (carretto con insegne) · 14566604 (caffè in città) · 14666409 (cane)
