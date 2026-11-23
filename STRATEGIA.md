@@ -115,3 +115,9 @@ Esclusa la preghiera del mattino (vedi Storico). Evitare ripetizioni; preferire 
 ## 9. Voce narrante (ElevenLabs)
 Usarla quando migliora davvero il contenuto (tipicamente il Reel/Short/TikTok del giorno: una motivazione o un versetto spiegato), non per forza ogni giorno.
 **Voce ufficiale: "Voce Profonda Autoritaria ITA"** (scelta dal proprietario il 19/11/2026), sempre con lettura enfatizzata in base al testo, mai piatta. Mai voci femminili. Tono sereno, vicino, autentico. Limiti e procedura in ISTRUZIONI.md.
+
+## 10. Decisioni del report del 23/11/2026
+- **Rotazione format controllata**: prima di scegliere il format del Reel, contare in CONTENT_LOG.md gli ultimi 7 giorni; "Versetto spiegato" e "Versetto che risponde a un'emozione" massimo 2 volte a settimana ciascuno (nella settimana 17-23/11 sono stati 6 su 7).
+- **Prova orari 24-26/11 (solo Instagram)**: carosello alle 13:00 e Reel alle 19:30; confronto nel report del 30/11 con la settimana precedente (caroselli 377-1.152 alle 19:30, Reel 390-812 alle 13:00).
+- **Avvento (dal 29/11)**: percorso "4 settimane per preparare il cuore", un contenuto-guida ogni domenica, senza collegare i Reel in serie.
+- **YouTube**: se lo Short va in errore per limite giornaliero, riprogrammarlo il giorno dopo solo se il testo non è legato alla data; altrimenti adattare il testo.
