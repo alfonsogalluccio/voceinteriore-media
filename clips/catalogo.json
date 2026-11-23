@@ -3250,5 +3250,65 @@
   "tono": "light",
   "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
   "originale": "15508013_1080_1920_30fps.mp4"
+ },
+ {
+  "file": "clips/lago-isola-dall-alto.mp4",
+  "poster": "clips/lago-isola-dall-alto.jpg",
+  "dur": 15.0,
+  "soggetto": "lago con un'isola e paesi sulle rive visto dall'alto",
+  "ambientazione": "lago tra le colline",
+  "palette": "azzurro e verde",
+  "luce": "nuvole e sole",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
+  "originale": "15556123_2160_3840_30fps.mp4"
+ },
+ {
+  "file": "clips/viale-ciliegi-fiore.mp4",
+  "poster": "clips/viale-ciliegi-fiore.jpg",
+  "dur": 15.0,
+  "soggetto": "viale con ciliegi in fiore e persone che passeggiano (primavera)",
+  "ambientazione": "parco sul lago",
+  "palette": "rosa e verde",
+  "luce": "luce morbida",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026; estratto 8-23 s",
+  "originale": "15579423_2160_3840_30fps.mp4"
+ },
+ {
+  "file": "clips/uomo-molo-faro-nebbia.mp4",
+  "poster": "clips/uomo-molo-faro-nebbia.jpg",
+  "dur": 8.3,
+  "soggetto": "uomo che cammina da solo su un molo verso il faro nella nebbia, quasi in bianco e nero",
+  "ambientazione": "molo sul mare",
+  "palette": "grigio",
+  "luce": "nebbia fitta",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
+  "originale": "15820761_1080_1920_30fps.mp4"
+ },
+ {
+  "file": "clips/citta-innevata-dall-alto.mp4",
+  "poster": "clips/citta-innevata-dall-alto.jpg",
+  "dur": 7.3,
+  "soggetto": "tetti di una città innevata con una lunga via dritta, visti dall'alto (breve)",
+  "ambientazione": "città d'inverno",
+  "palette": "bianco, cotto e grigio",
+  "luce": "luce d'inverno",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
+  "originale": "15562058_2160_3840_30fps.mp4"
+ },
+ {
+  "file": "clips/lago-montagne-albero-spoglio.mp4",
+  "poster": "clips/lago-montagne-albero-spoglio.jpg",
+  "dur": 10.9,
+  "soggetto": "albero spoglio davanti a un lago e montagne innevate",
+  "ambientazione": "lago alpino",
+  "palette": "verde, grigio e neve",
+  "luce": "nuvole rosate",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
+  "originale": "15701245_1080_1920_60fps.mp4"
  }
 ]
