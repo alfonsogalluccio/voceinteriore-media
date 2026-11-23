@@ -9,7 +9,8 @@ Tre Reel pronti da produrre nei prossimi giorni, uno al giorno, al posto di un R
 
 ---
 
-## 1. Serie "Alzati" – Parte 1 · Proverbi 24,16
+## 1. Serie "Alzati" – Parte 1 · Proverbi 24,16 — **usata il 2026-11-24**
+- Note d'uso: voce 471 caratteri con tag (28,3 s + 4,6 s di pause aggiunte = Reel 36 s); clip rallentata 1,4x con `"pingpong": true`; didascalia della bozza sostituita ("Sette volte a terra. Otto volte in piedi." ricalca un proverbio famoso) con "Non conto le cadute. Conto le volte che mi ha rialzato."
 - **Clip:** `clips/uomo-cappuccio-lago-nuvole.mp4` (darken 0,3).
 - **Testo CEI:** verificato su CEI 2008: «perché se il giusto cade sette volte, egli si rialza».
 - **Voce (372 caratteri):**
@@ -58,3 +59,5 @@ Tre Reel pronti da produrre nei prossimi giorni, uno al giorno, al posto di un R
 
 ---
 **Hashtag fissi (proposta):** #fedecristiana #paroladidio #preghiera #gesù #dio (+1 a tema, per esempio #salmo23).
+
+**Nota tecnica (24/11):** nel Reel con la voce mettere `"snap_beats": false` (altrimenti i tagli si spostano sui beat della musica e i sottotitoli non seguono la voce) e, per clip più corte del video, `"slow": 1.3-1.5` e `"pingpong": true` nel `bg`. Su Instagram usare solo i 5 hashtag fissi (limite di 5); il sesto a tema va su TikTok e YouTube.
