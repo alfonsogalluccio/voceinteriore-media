@@ -28,6 +28,7 @@ def known_ids():
     ids = set()
     if os.path.exists(CODES):
         ids |= set(re.findall(r"\b(\d{5,9})\b", open(CODES).read()))   # tabella e scartati
+        ids |= set(re.findall(r"\b(pxb\d+)\b", open(CODES).read()))   # Pixabay
     for c in json.load(open(CAT)):
         m = re.match(r"(\d+)", c.get("originale", "")); ids |= {m.group(1)} if m else set()
         if c.get("pexels_id"): ids.add(str(c["pexels_id"]))
@@ -41,7 +42,7 @@ def best_file(v):
     if not ok: return None
     return min(ok, key=lambda f: f["height"])          # il più leggero che arriva a 1920
 
-def pixabay_search(query):
+def pixabay_search(query, tag=None):
     """Cerca su Pixabay e restituisce video nel formato usato sotto (come Pexels)."""
     q = urllib.parse.quote(query)
     rq = urllib.request.Request(f"https://pixabay.com/api/videos/?key={PXB}&q={q}&per_page=50&safesearch=true", headers={"User-Agent": UA})
@@ -51,7 +52,10 @@ def pixabay_search(query):
         log("Errore API Pixabay:", e.code, e.read()[:200]); return []
     log(f"Pixabay '{query}': {data.get('totalHits')} risultati, {len(data.get('hits', []))} in questa pagina")
     out = []
+    tag = [t.lower() for t in (tag or [query.split()[0]])]
     for h in data.get("hits", []):
+        tags = {t.strip().lower() for t in h.get("tags", "").split(",")}
+        if not any(t in tags for t in tag): continue      # Pixabay restituisce anche risultati poco pertinenti
         vs = [x for x in (h.get("videos") or {}).values() if x.get("url") and x.get("width")]
         port = [x for x in vs if x["height"] > x["width"] and x["height"] >= 1920]
         land = [x for x in vs if x["width"] >= x["height"] and x["height"] >= 2160]   # 4K orizzontale: si ritaglia il centro
@@ -75,7 +79,8 @@ def main():
         need = int(r.get("quanti", 3)); pref = re.sub(r"[^a-z0-9-]", "", r.get("prefisso", "clip").lower()) or "clip"
         fonte_sito = r.get("sito") or ("pixabay" if PXB else "pexels")
         if fonte_sito == "pixabay":
-            videos = pixabay_search(r["cerca"])
+            videos = pixabay_search(r["cerca"], r.get("tag"))
+            log(f"  pertinenti (tag {r.get('tag') or r['cerca'].split()[0]}): {len(videos)}")
         else:
             q = urllib.parse.quote(r["cerca"])
             videos = api(f"https://api.pexels.com/videos/search?query={q}&orientation=portrait&per_page=40").get("videos", [])
@@ -94,7 +99,7 @@ def main():
             start = 1 if v["duration"] >= 17 else 0; dur = min(15, v["duration"] - start)
             ok = subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(start), "-t", str(dur), "-i", raw, "-an",
                             "-vf", "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30",
-                            "-c:v", "libx264", "-crf", "21", "-preset", "veryfast", "-pix_fmt", "yuv420p",
+                            "-c:v", "libx264", "-crf", "21", "-maxrate", "6M", "-bufsize", "12M", "-preset", "veryfast", "-pix_fmt", "yuv420p",
                             "-movflags", "+faststart", out], capture_output=True)
             if ok.returncode != 0:
                 log("ffmpeg fallito", vid, ok.stderr.decode()[-300:]); os.path.exists(out) and os.remove(out); continue
