@@ -290,8 +290,8 @@ Aggiornato al 23/11/2026 – 286 video. Prima di caricare un video, cerca qui il
 | — | uomo-vetta-braccia-alba | uomo sulla vetta che alza le braccia al sole |
 | — | veranda-mare-tramonto | tende e veranda sul mare al tramonto |
 | — | viale-notte-lampioni | viale alberato con lampioni e foglie |
-| pxb199623 | uomo-pxb199623 | (da verificare)  |
-| pxb282995 | uomo-pxb282995 | (da verificare)  |
+| pxb199623 | uomo-pxb199623 | uomo in giacca e cravatta che cammina in ufficio (volto visibile) |
+| pxb282995 | uomo-pxb282995 | uomo di spalle su un sentiero nel bosco d'inverno |
 
 ## Scartati (non rimandarli)
 Pixabay: pxb118768 (cascata, nessuna persona) · pxb33014 (porto dal drone) · 

@@ -280,8 +280,8 @@ Il proprietario **non compare nei video**. La riconoscibilità che @fearnotmenta
 **Perché non contraddice la sezione 1 ("mai ripetere gli sfondi"):** la clip cambia ogni volta, mentre restano fissi trattamento, protagonista e tipografia. Valgono sempre le regole delle 3 settimane per la stessa clip e degli 8 sfondi.
 
 **Clip adatte già in catalogo** (uomo senza volto in primo piano):
-uomo-cappuccio-lago-nuvole · persona-riva-torrente-montagna · persona-strada-notte · uomo-solo-campo-temporale · uomo-collina-tramonto-silhouette · uomo-molo-faro-nebbia · uomo-cammina-pontile-nebbia · uomo-casa-diroccata-albero · uomo-albero-solitario-alba · uomo-albero-tramonto-campo · uomo-pontile-alba · uomo-cammina-verso-sole · uomo-vetta-braccia-alba · uomo-terrazza-mare-nuvole · ragazzo-mani-giunte · uomo-prega-chiesa-luce · persona-albero-bianconero.
-Bastano per circa 5-6 settimane: chiedere al proprietario nel report altre clip Pexels di "uomo di spalle con felpa scura o cappuccio", in città, al lavoro, in chiesa e sotto la pioggia.
+uomo-cappuccio-lago-nuvole · persona-riva-torrente-montagna · persona-strada-notte · uomo-solo-campo-temporale · uomo-collina-tramonto-silhouette · uomo-molo-faro-nebbia · uomo-cammina-pontile-nebbia · uomo-casa-diroccata-albero · uomo-albero-solitario-alba · uomo-albero-tramonto-campo · uomo-pontile-alba · uomo-cammina-verso-sole · uomo-vetta-braccia-alba · uomo-terrazza-mare-nuvole · ragazzo-mani-giunte · uomo-prega-chiesa-luce · persona-albero-bianconero · uomo-pxb282995 (bosco d'inverno, Pixabay).
+Dal 23/11 le nuove clip arrivano in automatico da Pixabay (ISTRUZIONI.md, "Nuove clip automatiche"): l'attività serale le richiede quando ne restano meno di 6 libere e le verifica una per una.
 
 **Caroselli FORTE con la stessa divisa:** slide 1 con un fotogramma B/N di una di queste clip e la frase-hook; slide 2 nera con una sola frase serif bianca; slide 3 con versetto e firma.
 
