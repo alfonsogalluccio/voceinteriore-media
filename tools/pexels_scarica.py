@@ -7,7 +7,7 @@ Per ogni richiesta cerca video verticali, salta quelli già in libreria (CODICI_
 taglia 15 s in 1080x1920 senza audio, crea il poster, aggiunge la voce a catalogo.json con "da_verificare": true
 e la riga a CODICI_PEXELS.md. Alla fine svuota le richieste.
 Le clip "da_verificare" vanno guardate (poster e fotogrammi) e completate in italiano prima di usarle."""
-import json, os, re, subprocess, sys, urllib.parse, urllib.request, datetime
+import json, os, re, subprocess, sys, urllib.parse, urllib.request, urllib.error, datetime
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CLIPS = os.path.join(ROOT, "clips"); CAT = os.path.join(CLIPS, "catalogo.json")
@@ -15,6 +15,10 @@ REQ = os.path.join(CLIPS, "richieste.json"); CODES = os.path.join(CLIPS, "CODICI
 KEY = os.environ.get("PEXELS_API_KEY", "")
 PXB = os.environ.get("PIXABAY_API_KEY", "")   # Pexels ha sospeso le nuove chiavi (23/11/2026): si usa Pixabay
 MAX_PER_RUN = 10
+LOG = os.path.join(CLIPS, "ultimo_download.log"); _log = []
+def log(*a):
+    m = " ".join(str(x) for x in a); print(m, flush=True); _log.append(m)
+UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 
 def api(url):
     r = urllib.request.Request(url, headers={"Authorization": KEY, "User-Agent": "voceinteriore-clip/1.0"})
@@ -40,8 +44,12 @@ def best_file(v):
 def pixabay_search(query):
     """Cerca su Pixabay e restituisce video nel formato usato sotto (come Pexels)."""
     q = urllib.parse.quote(query)
-    with urllib.request.urlopen(f"https://pixabay.com/api/videos/?key={PXB}&q={q}&per_page=50&safesearch=true", timeout=60) as f:
-        data = json.load(f)
+    rq = urllib.request.Request(f"https://pixabay.com/api/videos/?key={PXB}&q={q}&per_page=50&safesearch=true", headers={"User-Agent": UA})
+    try:
+        with urllib.request.urlopen(rq, timeout=60) as f: data = json.load(f)
+    except urllib.error.HTTPError as e:
+        log("Errore API Pixabay:", e.code, e.read()[:200]); return []
+    log(f"Pixabay '{query}': {data.get('totalHits')} risultati, {len(data.get('hits', []))} in questa pagina")
     out = []
     for h in data.get("hits", []):
         vs = [x for x in (h.get("videos") or {}).values() if x.get("url") and x.get("width")]
@@ -79,13 +87,17 @@ def main():
             if not f: continue
             name = f"{pref}-{vid}"; raw = f"/tmp/{vid}.mp4"
             out = os.path.join(CLIPS, name + ".mp4"); poster = os.path.join(CLIPS, name + ".jpg")
-            rq = urllib.request.Request(f["link"], headers={"User-Agent": "voceinteriore-clip/1.0"})
-            with urllib.request.urlopen(rq, timeout=300) as src, open(raw, "wb") as dst: dst.write(src.read())
+            try:
+                subprocess.run(["curl", "-sSfL", "--max-time", "300", "-A", UA, "-o", raw, f["link"]], check=True, capture_output=True)
+            except subprocess.CalledProcessError as e:
+                log("Download fallito", vid, f["width"], "x", f["height"], e.stderr.decode()[:200]); continue
             start = 1 if v["duration"] >= 17 else 0; dur = min(15, v["duration"] - start)
-            subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(start), "-t", str(dur), "-i", raw, "-an",
+            ok = subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(start), "-t", str(dur), "-i", raw, "-an",
                             "-vf", "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30",
                             "-c:v", "libx264", "-crf", "21", "-preset", "veryfast", "-pix_fmt", "yuv420p",
-                            "-movflags", "+faststart", out], check=True)
+                            "-movflags", "+faststart", out], capture_output=True)
+            if ok.returncode != 0:
+                log("ffmpeg fallito", vid, ok.stderr.decode()[-300:]); os.path.exists(out) and os.remove(out); continue
             subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", "1", "-i", out, "-frames:v", "1", "-q:v", "3", poster], check=True)
             os.remove(raw)
             autore = (v.get("user") or {}).get("name", "")
@@ -97,7 +109,7 @@ def main():
                             pexels_url=v.get("url", ""), da_verificare=True,
                             **({"ritaglio_centrale": True} if v.get("orizzontale") else {})))
             ids.add(vid); need -= 1; added.append((vid, name, slug(v.get("url"))))
-            print("Aggiunta", name)
+            log("Aggiunta", name, f"({f['width']}x{f['height']})")
     json.dump(cat, open(CAT, "w"), indent=1, ensure_ascii=False)
     if added:
         lines = open(CODES).read().split("\n")
@@ -105,7 +117,12 @@ def main():
         lines[last + 1:last + 1] = [f"| {vid} | {name} | (da verificare) {s} |" for vid, name, s in added]   # pxb… = Pixabay
         open(CODES, "w").write("\n".join(lines))
     json.dump({"richieste": []}, open(REQ, "w"), indent=1)
-    print(f"Totale aggiunte: {len(added)}")
+    log(f"Totale aggiunte: {len(added)}")
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        import traceback; log("ERRORE:", repr(e)); log(traceback.format_exc()[-1500:])
+    finally:
+        open(LOG, "w").write(f"{datetime.datetime.now():%d/%m/%Y %H:%M} UTC\n" + "\n".join(_log).replace(PXB or "§", "***").replace(KEY or "§", "***") + "\n")

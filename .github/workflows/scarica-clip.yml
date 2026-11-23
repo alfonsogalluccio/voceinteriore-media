@@ -25,6 +25,7 @@ jobs:
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
         run: python3 tools/pexels_scarica.py
       - name: Salva nel repository
+        if: always()
         run: |
           git config user.name "voceinteriore-bot"
           git config user.email "voceinteriore-bot@users.noreply.github.com"
