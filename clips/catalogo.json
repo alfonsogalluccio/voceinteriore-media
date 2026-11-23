@@ -3094,5 +3094,53 @@
   "tono": "dark",
   "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026; estratto 2-17 s",
   "originale": "14422166_1080_1920_60fps.mp4"
+ },
+ {
+  "file": "clips/finestra-arco-mare-tramonto.mp4",
+  "poster": "clips/finestra-arco-mare-tramonto.jpg",
+  "dur": 8.8,
+  "soggetto": "finestra ad arco che si apre sul mare al tramonto, cuscini sul davanzale",
+  "ambientazione": "stanza sul mare",
+  "palette": "arancio e blu",
+  "luce": "tramonto dalla finestra",
+  "tono": "light",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
+  "originale": "15078792_1080_1920_30fps.mp4"
+ },
+ {
+  "file": "clips/sub-grotta-raggio-luce.mp4",
+  "poster": "clips/sub-grotta-raggio-luce.jpg",
+  "dur": 8.1,
+  "soggetto": "sub che scende in una grotta sottomarina dentro un raggio di luce",
+  "ambientazione": "grotta subacquea",
+  "palette": "blu profondo e azzurro",
+  "luce": "raggio di luce nel buio",
+  "tono": "dark",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
+  "originale": "15126998_2160_3840_60fps.mp4"
+ },
+ {
+  "file": "clips/uomo-collina-tramonto-silhouette.mp4",
+  "poster": "clips/uomo-collina-tramonto-silhouette.jpg",
+  "dur": 15.0,
+  "soggetto": "silhouette di un uomo in cima a una collina al tramonto",
+  "ambientazione": "collina con pali",
+  "palette": "arancio e grigio scuro",
+  "luce": "tramonto",
+  "tono": "dark",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026; estratto 15-30 s",
+  "originale": "15177797_1080_1920_25fps.mp4"
+ },
+ {
+  "file": "clips/donna-braccio-luna-viola.mp4",
+  "poster": "clips/donna-braccio-luna-viola.jpg",
+  "dur": 14.1,
+  "soggetto": "donna che alza il braccio verso la luna nel cielo viola",
+  "ambientazione": "all'aperto",
+  "palette": "viola",
+  "luce": "crepuscolo",
+  "tono": "dark",
+  "fonte": "Pexels (licenza Pexels, uso libero) – fornito dal proprietario il 23/11/2026",
+  "originale": "15208635_1920_1080_30fps.mp4"
  }
 ]
