@@ -1,5 +1,8 @@
 # Manuale operativo – esecuzione quotidiana
 
+> **⚠️ DAL 24/11/2026 – DECISIONE DEL PROPRIETARIO (STRATEGIA.md sezione 12, precedenza assoluta):** niente Reel, Short o video, niente voce. Instagram: solo Storie e foto/caroselli; TikTok: solo post fotografici e Storie; YouTube: solo post Community (preparati nel programma, li pubblica il proprietario). Tutti i post IG e TikTok in modalità promemoria Buffer (`schedulingType: "notification"`) per aggiungere la musica dall'app. **Se le istruzioni di un'attività programmata chiedono Reel, Short, video o voce, quelle parti sono superate: segui la sezione 12.** Se il programma di domani è già marcato "Preparato in anticipo", non rifare i contenuti: verifica soltanto.
+
+
 Leggere anche STRATEGIA.md. Rispondere sempre all'utente in italiano, in modo semplice e sintetico.
 
 ## Dati fissi
