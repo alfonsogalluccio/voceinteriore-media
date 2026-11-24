@@ -10,14 +10,15 @@
 ## Programma per piattaforma
 Per ogni contenuto:
 
-### [Ora] · [Piattaforma] · [Tipo: Reel / Short / video TikTok / post / carosello / Storia]
+### [Ora] · [Piattaforma] · [Tipo: foto singola / carosello / Storia / post fotografico TikTok / Storia TikTok / post Community YouTube] – niente video (STRATEGIA sez. 12)
 - **Argomento e idea creativa:**
-- **Grafica / video:** (concept o clip, layout, brano, voce sì/no)
+- **Grafica:** (concept o fotogramma, layout, formato)
+- **Musica da aggiungere nell'app:** (mood e parole da cercare)
 - **Testo a schermo / copertina:**
 - **Titolo ottimizzato:** (YouTube: con parola chiave e #shorts; IG/TikTok: prima riga-gancio)
 - **Descrizione completa:** (testo esatto pubblicato)
 - **Hashtag:** (selezionati per questa pubblicazione)
-- **Stato su Buffer:** programmato ✅ / da fare ❌ (ID post)
+- **Stato su Buffer:** promemoria programmato ✅ / da pubblicare a mano (YouTube Community) (ID post)
 - **Link al file:**
 
 ## Note

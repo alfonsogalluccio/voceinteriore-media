@@ -289,3 +289,31 @@ Dal 23/11 le nuove clip arrivano in automatico da Pixabay (ISTRUZIONI.md, "Nuove
 
 ### Come si integra con il piano 24-30/11 (sezione 10)
 Le decisioni del report restano valide. L'esperimento "affermazione forte nel primo fotogramma" si fa nel registro FORTE con font `impact`. I format nuovi della rotazione ("Se stai leggendo questo…", "Parabola in 15 secondi", "Preghiera per…") si possono girare in entrambi i registri. Per le ricorrenze delicate (25/11, violenza sulle donne) si usa il registro CUORE (dignità e protezione) e mai toni da battaglia.
+
+## 12. NUOVE REGOLE DI PUBBLICAZIONE (dal 24/11/2026, decisione del proprietario) – HANNO LA PRECEDENZA SU TUTTO
+Valgono più di ogni regola precedente (sezioni 8-11 comprese) in caso di conflitto.
+
+**Niente video.** Nessun Reel, Short o video in nessuna nuova programmazione. La divisa FORTE, la voce ElevenLabs e le clip si usano solo come fotogramma/immagine di sfondo, mai come video. Il registro FORTE/CUORE e il riferimento @fearnotmentality (frasi brevi, assolute, mantra «Alzati. Dio non ha finito con te.») restano validi, applicati alle immagini.
+
+**Instagram:** solo Storie e post fotografici (immagine singola o carosello, 4:5 1080x1350). Ogni contenuto ha una frase emozionante, significativa e coinvolgente. Sempre musica di sottofondo.
+**TikTok:** solo post fotografici (photo mode, 1080x1920, 5-6 immagini) e Storie. Immagini curate con frasi profonde, motivazionali e spirituali. Sempre musica di sottofondo.
+**YouTube:** solo post della scheda Community (testo, immagine 1:1 fino a 10, sondaggio con max 4 opzioni da 65 caratteri, quiz). Mai Short o video.
+
+**Limiti tecnici verificati (24/11/2026):**
+- Musica: le API di Instagram e TikTok non permettono a Buffer di aggiungere musica a foto, caroselli e Storie ([Buffer Help](https://support.buffer.com/en-us/articles/adding-music-stickers-and-other-effects-to-instagram-and-tiktok-posts-G5QrWfQL4k); [Instagram Audio API](https://developers.facebook.com/docs/instagram-platform/content-publishing/audio-api/) solo per i Reels). Quindi **tutti i post Instagram e TikTok si programmano in modalità promemoria** (`schedulingType: "notification"`): all'orario il proprietario riceve la notifica dell'app Buffer, apre il post e aggiunge dall'app la musica (e gli sticker sondaggio/domanda nelle Storie). Nel programma del giorno indicare per ogni contenuto il **mood musicale e le parole da cercare nella libreria dell'app** (mai titoli inventati).
+- TikTok Storie: Buffer non le gestisce in automatico; si programma un promemoria con testo che inizia "Da pubblicare come STORIA TikTok".
+- YouTube Community: Buffer accetta solo video su YouTube, quindi il post Community si prepara completo nel programma del giorno (testo, opzioni del sondaggio o immagine in media/AAAA-MM-GG/) e lo pubblica il proprietario dall'app YouTube.
+
+**Programmazione quotidiana (orari ben distribuiti, dai dati Buffer 10-24/11):**
+| Ora | Canale | Contenuto |
+|---|---|---|
+| 08:00 | Instagram | Storia 1 (Vangelo/frase del mattino) – dato: Storie del mattino 175 visualizzazioni medie contro 151 della sera |
+| 08:30 | TikTok | post fotografico 5-6 immagini – deduzione: il pubblico TikTok del proprietario è molto più attivo al mattino (13.570 visualizzazioni medie 7-10 contro 1.103 dei nostri video alle 20:30) |
+| 09:00 | YouTube | post Community (sondaggio 2-3 volte a settimana, altrimenti immagine + testo) – pubblicato dal proprietario |
+| 12:30 | Instagram | carosello 5-7 slide (test: alle 19:30 i caroselli calavano, 520 → 182 di copertura) |
+| 19:30 | Instagram | foto singola con frase forte (miglior contenuto statico nostro: 1.166 visualizzazioni, 17/11) |
+| 21:00 | Instagram | Storia 2 con domanda/sondaggio |
+| 21:15 | TikTok | Storia (stessa immagine della Storia 2 o una dedicata) |
+Rivedere gli orari ogni lunedì nel resoconto settimanale.
+
+**Varietà:** temi alternati (fede, speranza, motivazione, famiglia, riflessioni sulla vita, difficoltà), mai la stessa frase o lo stesso sfondo; controllo del formato prima di ogni programmazione (4:5 per IG feed, 9:16 per Storie e TikTok, 1:1 per YouTube).

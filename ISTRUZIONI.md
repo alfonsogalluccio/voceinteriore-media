@@ -90,6 +90,8 @@ Ammessi solo i brani della libreria: Pixabay (licenza verificata) e i brani `pro
 5. Se qualcosa non va: correggere e rigenerare. Mai pubblicare contenuti approssimativi.
 
 ## Pubblicazione su Buffer
+- **DAL 24/11/2026 (STRATEGIA sezione 12): niente Reel, Short o video. Instagram e TikTok solo immagini, sempre con `schedulingType: "notification"` (promemoria: la musica la aggiunge il proprietario dall'app). YouTube solo post Community, preparati nel programma e pubblicati dal proprietario. Le righe su Reel/Short/video qui sotto non valgono più.**
+- TikTok foto: `metadata.tiktok {title}` + 5-6 immagini 1080x1920 (generarle come `stories` nello SPEC e rinominarle `tiktok_n.jpg`; l'avviso RIPETIZIONE VISIVA sulle slide dello stesso carosello TikTok si può ignorare, ma registrare a mano gli sfondi in tools/bg_log.json).
 - Caricare i file in `media/AAAA-MM-GG/` del repo pubblico, fare push, verificare che ogni link risponda 200.
 - Creare i post con `create_post`, `schedulingType: automatic`, `mode: customScheduled`, `dueAt` con offset +01:00 (inverno) / +02:00 (estate).
 - Instagram post: `metadata.instagram {type:"post", shouldShareToFeed:true}`; carosello = più immagini nello stesso post.
