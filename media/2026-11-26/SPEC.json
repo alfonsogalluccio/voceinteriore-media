@@ -1,0 +1,68 @@
+{
+ "date": "2026-11-26",
+ "seed": 26,
+ "carousel_style": {
+  "layout": "centro",
+  "font": "serif"
+ },
+ "carousel": [
+  {
+   "bg": {
+    "clip": "clips/persona-strada-notte.mp4",
+    "grade": "bn",
+    "darken": 0.25
+   },
+   "layout": "basso",
+   "font": "impact",
+   "text": "*SALMO 23,4*\nPer chi stanotte\nnon dorme.",
+   "numbered": false,
+   "note": "Scorri"
+  },
+  {
+   "bg": {
+    "concept": "nero",
+    "variant": 1
+   },
+   "layout": "centro",
+   "font": "serif",
+   "text": "«Anche se vado\nper una valle oscura,\nnon temo alcun male,\nperché tu sei con me.»",
+   "sub": "Salmo 23,4",
+   "numbered": false
+  },
+  {
+   "bg": {
+    "clip": "clips/uomo-pxb99730.mp4",
+    "grade": "bn",
+    "darken": 0.3
+   },
+   "layout": "alto",
+   "font": "serif",
+   "text": "Non ti promette\nche non ci saranno\nvalli oscure.\nTi promette che non\nle attraverserai da solo.",
+   "numbered": false,
+   "note": "Alzati. Dio non ha finito con te."
+  }
+ ],
+ "stories": [
+  {
+   "kicker": "Il Vangelo di oggi · Luca 21,28",
+   "text": "«Risollevatevi\ne alzate il capo,\nperché la vostra\nliberazione è vicina»",
+   "bg": {
+    "concept": "grano",
+    "variant": 1
+   },
+   "layout": "alto",
+   "font": "serif"
+  },
+  {
+   "kicker": "Prima di dormire",
+   "text": "Qual è la tua\nvalle oscura, oggi?\nRispondi con\nuna parola.",
+   "note": "La porteremo in preghiera",
+   "bg": {
+    "concept": "stelle",
+    "variant": 1
+   },
+   "layout": "centro",
+   "font": "sans"
+  }
+ ]
+}

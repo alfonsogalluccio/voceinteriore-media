@@ -322,7 +322,12 @@ def render(spec, w, h, seed=1):
             src = tmp
         else: src = os.path.join(ROOT, c["poster"])
         m["tono"] = "dark"  # sulle foto reali il testo è sempre chiaro con velatura
-        return photo(src, w, h, spec.get("darken", 0.35)), m
+        im = photo(src, w, h, spec.get("darken", 0.35))
+        if spec.get("grade") == "bn":  # divisa FORTE anche sulle immagini: bianco e nero morbido, contrasto un po' più alto
+            a = np.array(im.convert("RGB"), np.float32); g = a @ np.array([0.299, 0.587, 0.114], np.float32)
+            a = a * 0.08 + g[..., None] * 0.92; a = (a - a.mean()) * 1.15 + a.mean() - 4
+            im = _img(np.clip(a, 0, 255)); m["palette"] = "bianco e nero"; m["concept"] += " (B/N)"
+        return im, m
     if "photo" in spec:
         m = dict(spec.get("meta", {})); m.setdefault("tono", "dark"); m["concept"] = "foto:" + os.path.basename(spec["photo"])
         return photo(spec["photo"], w, h, spec.get("darken", 0.45)), m
