@@ -26,7 +26,7 @@ Tre Reel pronti da produrre nei prossimi giorni, uno al giorno, al posto di un R
   8. Alzati. Dio non ha finito con te.
 - **Didascalia:** "Sette volte a terra. Otto volte in piedi." + riga vuota + "Invialo a chi oggi è a terra 🤍" + i 5 hashtag fissi.
 
-## 2. "Per chi combatte" · Salmo 23,4
+## 2. "Per chi combatte" · Salmo 23,4 — **usata il 2026-11-26** (come carosello IG 3 slide e TikTok 6 immagini, senza Reel né voce per la sezione 12)
 - **Clip:** `clips/persona-strada-notte.mp4` (darken 0,25).
 - **Testo CEI:** «Anche se vado per una valle oscura, non temo alcun male, perché tu sei con me». Riverificare su bibbiaedu.it prima di produrre.
 - **Voce (358 caratteri):**
