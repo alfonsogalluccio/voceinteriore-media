@@ -1,0 +1,14 @@
+{"date":"2026-11-27","seed":27,
+ "stories":[
+  {"kicker":"Il Vangelo di oggi · Luca 21,33","text":"«Il cielo e la terra\npasseranno,\nma le mie parole\nnon passeranno»","note":"Buon venerdì","bg":{"concept":"mare","variant":2},"layout":"alto","font":"serif_i"},
+  {"kicker":"Prima di dormire","text":"Cosa vorresti\nche non passasse\nmai?","note":"Rispondi con una parola","bg":{"concept":"candela","variant":1},"layout":"basso","font":"sans"}
+ ],
+ "reel":{"dur":16.5,"music":"proprio-per-mamma.mp3","music_start":40,"music_vol_with_voice":0.2,
+   "voice":"/home/claude/work/voce27.mp3","voice_delay":0.6,"snap_beats":false,
+   "bg":{"clip":"clips/clessidra-oro.mp4","darken":0.42,"slow":1.2,"pingpong":true},
+   "cuts":[5.4,11.7],
+   "scenes":[
+    {"style":"hook","text":"Oggi tutto è in offerta.\nE tutto, prima o poi,\npassa.","instant":true},
+    {"style":"verse","kicker":"Gesù dice","text":"«Il cielo e la terra passeranno,\nma le mie parole\nnon passeranno»","sub":"Luca 21,33"},
+    {"style":"hook","text":"Quando ti ha detto\nche ti ama,\nnon ci ha messo\nuna scadenza.","small":"Invialo a chi si sente di poco valore"}
+   ]}}
