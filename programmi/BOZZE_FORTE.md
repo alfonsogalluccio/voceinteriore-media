@@ -43,7 +43,7 @@ Tre Reel pronti da produrre nei prossimi giorni, uno al giorno, al posto di un R
 - **Didascalia:** "Non da solo." + riga vuota + "Scrivi il nome di chi sta attraversando la sua valle 🙏" + i 5 hashtag fissi.
 
 ## 3. "Verità che fa bene" · Romani 8,31
-- **Clip:** `clips/uomo-collina-tramonto-silhouette.mp4` (darken 0,3).
+- **Clip:** ~~`clips/uomo-collina-tramonto-silhouette.mp4`~~ usata il 26/11 nel TikTok (regola delle 3 settimane): usare `clips/uomo-vetta-braccia-alba.mp4` oppure `clips/uomo-terrazza-mare-nuvole.mp4` (darken 0,3). Nota del 26/11 sera.
 - **Testo CEI:** «Se Dio è per noi, chi sarà contro di noi?». Riverificare su bibbiaedu.it prima di produrre.
 - **Voce (349 caratteri):**
   > Romani 8,31. «Se Dio è per noi, chi sarà contro di noi?» Lo diciamo facilmente, in chiesa, quando va tutto bene. Poi arriva la lettera che non volevi, la diagnosi, la porta che si chiude. E lo dimentichiamo. Ma questa frase non è stata scritta per i giorni facili. È stata scritta per oggi. Per te. Chi è contro di te non ha l'ultima parola. Dio sì.

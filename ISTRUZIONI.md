@@ -9,8 +9,7 @@ Leggere anche STRATEGIA.md. Rispondere sempre all'utente in italiano, in modo se
 
 ## Dati fissi
 - Organizzazione Buffer: `6afb10ef95eeea256eaaf045` (fuso Europe/Rome, piano Free: max 10 post in coda per canale)
-- Canali: Instagram `6afb11adece6dfde5fe4ec9a` · TikTok `6afb1233ece6dfde5fe4f23c` · YouTube `6afb125aece6dfde5fe4f3f8`
-- Facebook: NON collegato (il piano Free consente 3 canali).
+- Canali (dal 26/11/2026): Instagram `6afb11adece6dfde5fe4ec9a` · TikTok `6afb1233ece6dfde5fe4f23c` · pagina Facebook VoceInteriore2025 `6b083a7b8541f09ecbafcb02` (type page). YouTube tolto da Buffer: solo post Community a mano.
 - Repo pubblico media: `alfonsogalluccio/voceinteriore-media` → link file: `https://raw.githubusercontent.com/alfonsogalluccio/voceinteriore-media/main/media/AAAA-MM-GG/<file>`
 - Musica principale: cartella `music/` di QUESTO repo, con i soli brani `proprio-*` creati dal proprietario (uso libero, messi qui il 18/11 perché le attività programmate non raggiungono il repo privato).
 - Repo privato musica: `alfonsogalluccio/voceinteriore-privato` (cartella `music/`) con i brani Pixabay: usarlo solo se raggiungibile. I brani Pixabay NON vanno mai nel repo pubblico (la licenza vieta di distribuirli da soli).
