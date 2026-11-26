@@ -324,3 +324,8 @@ Valgono più di ogni regola precedente (sezioni 8-11 comprese) in caso di confli
 Rivedere gli orari ogni lunedì nel resoconto settimanale.
 
 **Varietà:** temi alternati (fede, speranza, motivazione, famiglia, riflessioni sulla vita, difficoltà), mai la stessa frase o lo stesso sfondo; controllo del formato prima di ogni programmazione (4:5 per IG feed, 9:16 per Storie e TikTok, 1:1 per YouTube).
+
+## 12. Canali dal 26/11/2026 (decisione del proprietario)
+- Buffer: Instagram (6afb11adece6dfde5fe4ec9a), TikTok (6afb1233ece6dfde5fe4f23c) e **pagina Facebook VoceInteriore2025 (6b083a7b8541f09ecbafcb02, type page)**. Mai il profilo personale del proprietario.
+- YouTube tolto da Buffer: niente Short. Ogni giorno solo il post Community (immagine 1:1 + testo) che il proprietario pubblica a mano alle 09:00 (promemoria alle 08:53).
+- Facebook: Reel verticali (i Reel del giorno, con testo scritto apposta), didascalia con frase-sintesi, invito a condividere/commentare, 2-3 hashtag. Primo giorno: 26/11 (Reel FORTE Salmo 23,4 alle 18:00, Reel Luca 21,28 alle 21:00); orari da affinare con i dati.
