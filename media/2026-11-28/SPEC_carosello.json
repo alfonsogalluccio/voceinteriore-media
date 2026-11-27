@@ -1,0 +1,8 @@
+{"date":"2026-11-28","seed":128,
+ "stories":[
+  {"kicker":"Sabato · Luca 21","text":"Hai il cuore\npesante?\nGesù oggi\nti dice una cosa.","note":"Scorri","bg":{"clip":"clips/tazza-fumante-finestra.mp4","darken":0.4},"layout":"centro","font":"serif"},
+  {"kicker":"Gesù dice","text":"«State attenti a voi stessi,\nche i vostri cuori\nnon si appesantiscano\nin dissipazioni,\nubriachezze\ne affanni della vita»","sub":"Luca 21,34","bg":{"clip":"clips/passi-foglie-autunno.mp4","darken":0.55},"layout":"centro","font":"serif"},
+  {"text":"Gli affanni\nnon si vincono\ncorrendo di più.","bg":{"clip":"clips/strada-montagna-drone.mp4","darken":0.4},"layout":"alto","font":"serif"},
+  {"text":"Si vincono\nfermandosi con Lui.\n«Vegliate in ogni\nmomento pregando»","sub":"Luca 21,36","bg":{"clip":"clips/baita-via-lattea.mp4","darken":0.35},"layout":"alto","font":"serif"},
+  {"text":"Domani inizia l'Avvento.\nStasera posa un peso\nai suoi piedi.","note":"Scrivi il peso che posi · invialo a chi è stanco","bg":{"clip":"clips/lanterna-finestra-neve.mp4","darken":0.35},"layout":"centro","font":"serif_i"}
+ ]}

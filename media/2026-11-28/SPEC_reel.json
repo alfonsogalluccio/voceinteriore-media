@@ -1,0 +1,94 @@
+{
+ "date": "2026-11-28",
+ "seed": 28,
+ "reel": {
+  "dur": 36,
+  "music": "proprio-musica.mp3",
+  "music_start": 4,
+  "music_vol_with_voice": 0.2,
+  "voice": "/home/claude/work/voce28.mp3",
+  "voice_delay": 0.6,
+  "snap_beats": false,
+  "particles": false,
+  "bg": {
+   "clip": "clips/uomo-vetta-braccia-alba.mp4",
+   "grade": "bn",
+   "darken": 0.36,
+   "slow": 1.4,
+   "pingpong": true,
+   "clip_end": 9
+  },
+  "cuts": [
+   3.0,
+   5.0,
+   7.0,
+   11.1,
+   13.5,
+   14.95,
+   16.75,
+   18.25,
+   21.3,
+   24.0,
+   26.75,
+   28.05
+  ],
+  "scenes": [
+   {
+    "style": "hook",
+    "font": "impact",
+    "text": "*ROMANI 8,31*",
+    "instant": true,
+    "cy": 900
+   },
+   {
+    "style": "caption",
+    "text": "Se Dio è per noi,"
+   },
+   {
+    "style": "caption",
+    "text": "chi sarà contro di noi?"
+   },
+   {
+    "style": "caption",
+    "text": "Lo diciamo facilmente,\nin chiesa,\nquando va tutto bene."
+   },
+   {
+    "style": "caption",
+    "text": "Poi arriva la lettera\nche non volevi."
+   },
+   {
+    "style": "caption",
+    "text": "La diagnosi."
+   },
+   {
+    "style": "caption",
+    "text": "La porta che si chiude."
+   },
+   {
+    "style": "caption",
+    "text": "E lo dimentichiamo."
+   },
+   {
+    "style": "caption",
+    "text": "Ma questa frase\nnon è stata scritta\nper i giorni facili."
+   },
+   {
+    "style": "caption",
+    "text": "È stata scritta per oggi.\nPer te."
+   },
+   {
+    "style": "caption",
+    "text": "Chi è contro di te\nnon ha l'ultima parola."
+   },
+   {
+    "style": "caption",
+    "text": "Dio sì."
+   },
+   {
+    "style": "caption",
+    "text": "Alzati.\nDio non ha finito con te.",
+    "size": 72
+   }
+  ]
+ }
+}

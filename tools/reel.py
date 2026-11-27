@@ -96,6 +96,11 @@ def render(spec, out, music_dir, lib, tmp="/home/claude/rtmp"):
         cp = os.path.join(SCN.ROOT, bgspec["clip"])
         # "slow": rallenta la clip (es. 1.5); "pingpong": true la fa scorrere avanti e indietro, così nei Reel
         # lunghi (35-45 s) una clip da 12-15 s non "salta" quando ricomincia
+        # "clip_end": usa solo i primi N secondi della clip (es. per escludere un tratto con il volto visibile)
+        if bgspec.get("clip_end"):
+            tp = f"{tmp}/clip_trim.mp4"
+            subprocess.run(f'ffmpeg -v error -y -i "{cp}" -t {bgspec["clip_end"]} -an -c:v libx264 -crf 16 -preset veryfast "{tp}"', shell=True, check=True)
+            cp = tp
         if bgspec.get("slow") or bgspec.get("pingpong"):
             k = bgspec.get("slow", 1.0); lp = f"{tmp}/clip_loop.mp4"
             fc = f"[0:v]setpts={k}*PTS,split[a][b];[b]reverse[r];[a][r]concat=n=2:v=1[v]" if bgspec.get("pingpong") else f"[0:v]setpts={k}*PTS[v]"
